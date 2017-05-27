@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bankjaxrs" />
+        <module name="core-api" />
+        <module name="core-application" />
+        <module name="core-ejb" />
+        <module name="core-model" />
+        <module name="core-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bankjaxrs" target="1.8" />
+      <module name="apteka" target="1.5" />
+      <module name="core-api" target="1.5" />
+      <module name="core-application" target="1.7" />
+      <module name="core-ejb" target="1.7" />
+      <module name="core-model" target="1.5" />
+      <module name="core-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
