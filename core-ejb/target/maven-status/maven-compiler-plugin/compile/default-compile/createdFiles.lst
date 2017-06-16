@@ -1,0 +1,2 @@
+core\ejb\dao\DefaultEmployeeDAO.class
+core\ejb\manager\DefaultEmployeeManager.class

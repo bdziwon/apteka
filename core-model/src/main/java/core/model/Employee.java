@@ -1,16 +1,13 @@
 package core.model;
 
-
-import javax.validation.constraints.NotNull;
-
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @NamedQueries({
         @NamedQuery(
                 name = "User.findAllOrdered",
-                query = "SELECT employee FROM Employee employee ORDER BY employee.id ASC")
+                query = "SELECT employee FROM core.model.Employee employee ORDER BY employee.id ASC")
 })
 
 @Entity

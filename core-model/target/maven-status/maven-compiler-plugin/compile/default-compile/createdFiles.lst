@@ -1,0 +1,6 @@
+core\model\Client.class
+core\model\Medicine.class
+core\model\ReplacementGroup.class
+core\model\Recipe.class
+core\model\MedicineOrder.class
+core\model\Employee.class

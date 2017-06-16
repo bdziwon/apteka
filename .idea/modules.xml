@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/apteka.iml" filepath="$PROJECT_DIR$/apteka.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-api/core-api.iml" filepath="$PROJECT_DIR$/core-api/core-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-application/core-application.iml" filepath="$PROJECT_DIR$/core-application/core-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-ejb/core-ejb.iml" filepath="$PROJECT_DIR$/core-ejb/core-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-model/core-model.iml" filepath="$PROJECT_DIR$/core-model/core-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/core-web/core-web.iml" filepath="$PROJECT_DIR$/core-web/core-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-web/core-web.iml" filepath="$PROJECT_DIR$/core-web/core-web.iml" group="core-web and modules" />
+      <module fileurl="file://$PROJECT_DIR$/projects/logging/logging.iml" filepath="$PROJECT_DIR$/projects/logging/logging.iml" group="projects and modules" />
+      <module fileurl="file://$PROJECT_DIR$/primary-source/primary-source.iml" filepath="$PROJECT_DIR$/primary-source/primary-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project.iml" filepath="$PROJECT_DIR$/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/projects.iml" filepath="$PROJECT_DIR$/projects/projects.iml" group="projects and modules" />
+      <module fileurl="file://$PROJECT_DIR$/core-web/servlet/servlet.iml" filepath="$PROJECT_DIR$/core-web/servlet/servlet.iml" group="core-web and modules" />
     </modules>
   </component>
 </project>

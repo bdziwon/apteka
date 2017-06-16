@@ -1,12 +1,10 @@
 package core.api.manager;
 
-import java.util.List;
-
-
 import core.api.exception.EmployeeNotFoundException;
 import core.model.Employee;
 
 import javax.ejb.Remote;
+import java.util.List;
 
 @Remote
 public interface EmployeeManager  {

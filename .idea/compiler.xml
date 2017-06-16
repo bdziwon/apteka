@@ -10,16 +10,27 @@
         <module name="core-application" />
         <module name="core-ejb" />
         <module name="core-model" />
-        <module name="core-web" />
+        <module name="ear" />
+        <module name="ejbs" />
+        <module name="logging" />
+        <module name="primary-source" />
+        <module name="servlet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="apteka" target="1.5" />
       <module name="core-api" target="1.5" />
-      <module name="core-application" target="1.7" />
-      <module name="core-ejb" target="1.7" />
+      <module name="core-application" target="1.5" />
+      <module name="core-ejb" target="1.5" />
       <module name="core-model" target="1.5" />
-      <module name="core-web" target="1.7" />
+      <module name="core-web" target="1.5" />
+      <module name="ear" target="1.5" />
+      <module name="ejbs" target="1.5" />
+      <module name="logging" target="1.5" />
+      <module name="primary-source" target="1.5" />
+      <module name="project" target="1.5" />
+      <module name="projects" target="1.5" />
+      <module name="servlet" target="1.5" />
+      <module name="servlets" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

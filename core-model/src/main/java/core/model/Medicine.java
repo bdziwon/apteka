@@ -1,9 +1,7 @@
 package core.model;
 
-import javax.validation.constraints.NotNull;
-
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.List;
 

@@ -1,0 +1,35 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>root.project.core-web</groupId>
+   <artifactId>servlet</artifactId>
+   <packaging>war</packaging>
+   <name>servlet</name>
+   <version>1.0</version>
+   <parent>
+      <groupId>root</groupId>
+      <artifactId>project</artifactId>
+      <version>1.0</version>
+   </parent>
+   <dependencies>
+      <dependency>
+         <groupId>root.project</groupId>
+         <artifactId>primary-source</artifactId>
+         <scope>provided</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/javax.faces/jsf-api -->
+      <dependency>
+         <groupId>javax.faces</groupId>
+         <artifactId>jsf-api</artifactId>
+         <version>2.1</version>
+         <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+         <groupId>root</groupId>
+         <artifactId>core-api</artifactId>
+         <version>1.0</version>
+      </dependency>
+
+   </dependencies>
+</project>
