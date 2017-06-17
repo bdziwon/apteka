@@ -1,44 +1,16 @@
-<project>
-   <modelVersion>4.0.0</modelVersion>
-   <groupId>root</groupId>
-   <version>1.0</version>
-   <artifactId>project</artifactId>
-   <packaging>pom</packaging>
-   <name>project</name>
-   <modules>
-      <module>projects</module>
-      <module>primary-source</module>
-      <module>core-web</module>
-      <module>core-ejb</module>
-      <module>core-application</module>
-      <module>core-model</module>
-      <module>core-api</module>
-   </modules>
-
-   <dependencyManagement>
-      <dependencies>
-         <dependency>
-            <groupId>root.project.projects</groupId>
-            <artifactId>logging</artifactId>
-            <version>1.0</version>
-         </dependency>
-         <dependency>
-            <groupId>root.project</groupId>
-            <artifactId>primary-source</artifactId>
-            <version>1.0</version>
-         </dependency>
-         <dependency>
-            <groupId>root.project.core-web</groupId>
-            <artifactId>servlet</artifactId>
-            <version>1.0</version>
-            <type>war</type>
-         </dependency>
-         <dependency>
-            <groupId>root.project</groupId>
-            <artifactId>core.ejb</artifactId>
-            <version>1.0</version>
-            <type>core.ejb</type>
-         </dependency>
-      </dependencies>
-   </dependencyManagement>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>application.core</groupId>
+  <artifactId>apteka</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>apteka</name>
+  <modules>
+    <module>core-ear</module>
+    <module>core-web</module>
+    <module>core-ejb</module>
+    <module>core-api</module>
+    <module>core-model</module>
+  </modules>
 </project>

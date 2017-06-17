@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Built-By: Bartek
-Class-Path: primary-source-1.0.jar logging-1.0.jar
-Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_131
-
