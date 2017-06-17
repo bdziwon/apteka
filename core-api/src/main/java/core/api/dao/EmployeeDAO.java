@@ -3,6 +3,8 @@ package core.api.dao;
 import core.model.Employee;
 
 import javax.ejb.Local;
+import javax.ejb.LocalBean;
+import javax.ejb.Remote;
 import java.util.List;
 
 

@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Session Bean implementation class DefaultEmployeeManager
  */
-@Stateless
+@Stateless(mappedName = "DefaultEmployeeManager")
 public class DefaultEmployeeManager implements EmployeeManager {
 
 	@EJB
