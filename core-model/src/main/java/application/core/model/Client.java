@@ -2,12 +2,13 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "client")
 
-public class Client {
+public class Client implements Serializable {
 
     @NotNull
     @Id
@@ -15,7 +16,6 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NotNull
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
     private List<Recipe> recipes;
 

@@ -2,13 +2,14 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 
 @Entity
 @Table(name = "medicine")
-public class Medicine {
+public class Medicine implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,12 +29,10 @@ public class Medicine {
     @Column(name = "description", length = 500)
     private String  description;
 
-    @NotNull
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_replacements")
     private ReplacementGroup replacementGroup;
 
-    @NotNull
     @OneToMany(mappedBy = "medicine", cascade = CascadeType.ALL)
     private List<MedicineOrder> orders;
 

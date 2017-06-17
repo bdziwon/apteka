@@ -2,11 +2,12 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "replacement_group")
-public class ReplacementGroup {
+public class ReplacementGroup implements Serializable {
 
     @NotNull
     @Id
@@ -14,7 +15,6 @@ public class ReplacementGroup {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
     @OneToMany(mappedBy = "replacementGroup", cascade = CascadeType.ALL)
     private List<Medicine> medicines;
 

@@ -11,10 +11,6 @@
         <module name="core-ejb" />
         <module name="core-model" />
         <module name="core-web" />
-        <module name="WildflyTest-ear" />
-        <module name="WildflyTest-ejb" />
-        <module name="WildflyTest-interfaces" />
-        <module name="WildflyTest-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,12 +20,6 @@
       <module name="core-ejb" target="1.6" />
       <module name="core-model" target="1.7" />
       <module name="core-web" target="1.6" />
-      <module name="WildflyTest" target="1.5" />
-      <module name="WildflyTest-ear" target="1.6" />
-      <module name="WildflyTest-ejb" target="1.6" />
-      <module name="WildflyTest-interfaces" target="1.7" />
-      <module name="WildFlyTest-rest" target="1.6" />
-      <module name="WildflyTest-web" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

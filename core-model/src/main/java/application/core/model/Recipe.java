@@ -2,18 +2,18 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "recipe")
-public class Recipe {
+public class Recipe implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
-    @NotNull
     @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL)
     private List<MedicineOrder> medicines;
 

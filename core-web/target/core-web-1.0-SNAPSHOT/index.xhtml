@@ -3,13 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
+
 </h:head>
 <h:body>
     hello - new
     <h:inputText id="title"
                  value="#{employeeBean.hello()}"
                  size="15"> </h:inputText>
+
+    <!-- primefaces-->
+    <p:button value="Prime" icon="ui-icon-star">
+    </p:button>
+
 </h:body>
+
+
+
 </html>

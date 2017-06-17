@@ -2,10 +2,11 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "medicine_order")
-public class MedicineOrder  {
+public class MedicineOrder implements Serializable {
 
     @NotNull
     @Id

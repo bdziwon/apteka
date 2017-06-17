@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="ejb-jar" name="WildflyTest-ejb:ejb">
-    <output-path>$PROJECT_DIR$/WildflyTest-ejb/target</output-path>
-    <root id="archive" name="WildflyTest-ejb-1.0-SNAPSHOT.jar">
-      <element id="artifact" artifact-name="WildflyTest-ejb:ejb exploded" />
-    </root>
-  </artifact>
-</component>

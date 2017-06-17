@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="WildflyTest-web:war">
-    <output-path>$PROJECT_DIR$/WildflyTest-web/target</output-path>
-    <root id="archive" name="WildflyTest-web-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="WildflyTest-web:war exploded" />
-    </root>
-  </artifact>
-</component>

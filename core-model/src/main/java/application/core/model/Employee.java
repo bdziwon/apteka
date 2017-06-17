@@ -2,6 +2,7 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.List;
 
 @NamedQueries({
@@ -12,7 +13,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "employee")
-public class Employee {
+public class Employee implements Serializable {
 
     @NotNull
     @Id
@@ -28,7 +29,6 @@ public class Employee {
     @Column(name = "last_name")
     private String lastName;
 
-    @NotNull
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<Recipe> addedRecipes;
 

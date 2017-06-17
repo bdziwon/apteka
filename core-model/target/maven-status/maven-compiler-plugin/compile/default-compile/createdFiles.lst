@@ -1,6 +1,6 @@
+application\core\model\Medicine.class
 application\core\model\Client.class
 application\core\model\MedicineOrder.class
 application\core\model\Employee.class
 application\core\model\Recipe.class
-application\core\model\Medicine.class
 application\core\model\ReplacementGroup.class
