@@ -1,5 +1,6 @@
 package application.core.model;
 
+import javax.inject.Named;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -8,7 +9,18 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(
                 name = "Employee.findAllOrdered",
-                query = "SELECT employee FROM Employee employee ORDER BY employee.id ASC")
+                query = "SELECT employee " +
+                        "FROM Employee employee " +
+                        "ORDER BY employee.id ASC"
+        ),
+
+        @NamedQuery(
+                name = "Employee.findByCredentials",
+                query = "SELECT  employee " +
+                        "FROM Employee employee " +
+                        "WHERE employee.username = username AND employee.password = password " +
+                        "ORDER BY employee.id ASC"
+        )
 })
 
 @Entity
@@ -29,11 +41,47 @@ public class Employee implements Serializable {
     @Column(name = "last_name")
     private String lastName;
 
+    @NotNull
+    @Column(name = "username")
+    private String username;
+
+    @NotNull
+    @Column(name = "password")
+    private String password;
+
     @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private List<Recipe> addedRecipes;
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<Recipe> getAddedRecipes() {
+        return addedRecipes;
+    }
+
+    public void setAddedRecipes(List<Recipe> addedRecipes) {
+        this.addedRecipes = addedRecipes;
     }
 
     public String getFirstName() {

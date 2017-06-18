@@ -20,6 +20,11 @@ public class DefaultEmployeeManager implements EmployeeManager {
 		employeeDAO.removeEmployee(employee);
 	}
 
+	@Override
+	public List<Employee> findEmployeesByCredentials(String username, String password) {
+		return employeeDAO.findEmployeesByCredentials(username, password);
+	}
+
 	public void persistEmployee(Employee employee) {
 		employeeDAO.persistEmployee(employee);
 	}

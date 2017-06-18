@@ -20,4 +20,5 @@ public interface EmployeeDAO {
 
 	List<Employee> findAllEmployees();
 
+    List<Employee> findEmployeesByCredentials(String username, String password);
 }

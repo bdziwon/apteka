@@ -29,6 +29,15 @@ public class DefaultEmployeeDAO implements EmployeeDAO {
 		return entityManager.createNamedQuery("Employee.findAllOrdered").getResultList();
 	}
 
+	@Override
+	public List<Employee> findEmployeesByCredentials(String username, String password) {
+		return entityManager
+				.createNamedQuery("Employee.findByCredentials")
+				.setParameter("username", username)
+				.setParameter("password", password)
+				.getResultList();
+	}
+
 	public Employee mergeEmployee(Employee employee) {
 		return entityManager.merge(employee);
 	}

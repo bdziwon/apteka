@@ -14,6 +14,10 @@
           <element id="archive" name="core-model-1.0-SNAPSHOT.jar">
             <element id="module-output" name="core-model" />
           </element>
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.1.3.Final" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

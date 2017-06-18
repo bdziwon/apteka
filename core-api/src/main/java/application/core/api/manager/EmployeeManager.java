@@ -19,4 +19,6 @@ public interface EmployeeManager  {
 
 	void removeEmployee(Employee employee);
 
+	List<Employee> findEmployeesByCredentials(String username, String password);
+
 }

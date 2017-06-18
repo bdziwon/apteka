@@ -9,14 +9,10 @@
 
 </h:head>
 <h:body>
-    hello - new
-    <h:inputText id="title"
-                 value="#{employeeBean.hello()}"
-                 size="15"> </h:inputText>
+    <!--this method redirects to login page if not logged-->
+    #{employeeBean.initialize()}
 
-    <!-- primefaces-->
-    <p:button value="Prime" icon="ui-icon-star">
-    </p:button>
+    hello - new
 
 </h:body>
 
