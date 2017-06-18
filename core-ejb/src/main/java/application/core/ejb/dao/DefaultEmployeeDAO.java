@@ -47,7 +47,7 @@ public class DefaultEmployeeDAO implements EmployeeDAO {
 	}
 
 	public void removeEmployee(Employee employee) {
-		entityManager.remove(employee);
+		entityManager.remove(mergeEmployee(employee));
 	}
 
 }
