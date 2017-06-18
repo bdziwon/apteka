@@ -11,7 +11,9 @@
         <title>Leki</title>
     </h:head>
     <h:body>
-    <h:form id="MedicinesForm">
+        #{employeeBean.initialize()}
+
+        <h:form id="MedicinesForm">
 
     <p:dataTable id="medicinelist" var="medicine" value="#{MedicineBean.getMedicines()}">
         <p:column headerText="description">
