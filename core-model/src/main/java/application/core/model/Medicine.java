@@ -6,6 +6,17 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "Medicine.findAllOrdered",
+                query = "SELECT medicine " +
+                        "FROM Medicine medicine " +
+                        "ORDER BY medicine.id ASC"
+        )
+
+
+})
+
 
 @Entity
 @Table(name = "medicine")
@@ -93,4 +104,29 @@ public class Medicine implements Serializable {
     public Long getId() {
         return id;
     }
+
+    public List<MedicineOrder> getOrders() {
+        return orders;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Long getQuantity() {
+        return quantity;
+    }
+
+    public void setOrders(List<MedicineOrder> orders) {
+        this.orders = orders;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setQuantity(Long quantity) {
+        this.quantity = quantity;
+    }
 }
+
