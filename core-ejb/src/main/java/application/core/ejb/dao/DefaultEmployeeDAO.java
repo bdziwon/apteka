@@ -38,6 +38,14 @@ public class DefaultEmployeeDAO implements EmployeeDAO {
 				.getResultList();
 	}
 
+	@Override
+	public List<Employee> findAllEmployeesByUsername(String username) {
+		return entityManager
+				.createNamedQuery("Employee.findByUsername")
+				.setParameter("username", username)
+				.getResultList();
+	}
+
 	public Employee mergeEmployee(Employee employee) {
 		return entityManager.merge(employee);
 	}

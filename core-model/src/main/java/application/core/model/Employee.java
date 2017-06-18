@@ -18,7 +18,15 @@ import java.util.List;
                 name = "Employee.findByCredentials",
                 query = "SELECT  employee " +
                         "FROM Employee employee " +
-                        "WHERE employee.username = username AND employee.password = password " +
+                        "WHERE employee.username = :username AND employee.password = :password " +
+                        "ORDER BY employee.id ASC"
+        ),
+
+        @NamedQuery(
+                name = "Employee.findByUsername",
+                query = "SELECT  employee " +
+                        "FROM Employee employee " +
+                        "WHERE employee.username = :username " +
                         "ORDER BY employee.id ASC"
         )
 })

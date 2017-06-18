@@ -25,6 +25,11 @@ public class DefaultEmployeeManager implements EmployeeManager {
 		return employeeDAO.findEmployeesByCredentials(username, password);
 	}
 
+	@Override
+	public List<Employee> findEmployeesByUsername(String username) {
+		return employeeDAO.findAllEmployeesByUsername(username);
+	}
+
 	public void persistEmployee(Employee employee) {
 		employeeDAO.persistEmployee(employee);
 	}

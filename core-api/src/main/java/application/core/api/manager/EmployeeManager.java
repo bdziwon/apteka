@@ -21,4 +21,5 @@ public interface EmployeeManager  {
 
 	List<Employee> findEmployeesByCredentials(String username, String password);
 
+    List<Employee> findEmployeesByUsername(String username);
 }

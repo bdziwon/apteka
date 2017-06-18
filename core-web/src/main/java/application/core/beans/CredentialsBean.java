@@ -19,11 +19,11 @@ import java.io.Serializable;
 public class CredentialsBean implements Serializable {
 
     @NotNull
-    @Length(min = 3, max = 20)
+    @Length(min = 3, max = 19, message = "Username should be longer than 2 chars and shorter than 20 chars")
     private String username;
 
     @NotNull
-    @Length(min = 6, max = 25)
+    @Length(min = 6, max = 24, message = "Password should be longer than 5 chars and shorter than 25 chars")
     private String password;
 
     public CredentialsBean(){

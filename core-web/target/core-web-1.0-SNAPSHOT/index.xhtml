@@ -9,10 +9,33 @@
 
 </h:head>
 <h:body>
-    <!--this method redirects to login page if not logged-->
     #{employeeBean.initialize()}
 
-    hello - new
+
+    <!--<p:ribbon>-->
+        <!--    <p:tab title="User">-->
+        <!--        <p:ribbonGroup label="Log out">-->
+        <!--            <p:commandButton value="Log out"  type="button" />-->
+        <!--        </p:ribbonGroup>-->
+        <!--    </p:tab>-->
+    <!--</p:ribbon>-->
+
+    <p:layout style="min-width:400px;min-height:200px;">
+        <p:layoutUnit position="west" resizable="true" size="25%" minSize="40">
+        <p:outputLabel>Logged as: #{employeeBean.employee.firstName} #{employeeBean.employee.lastName}</p:outputLabel>
+        <h:form id="LogOut">
+            <p:growl id="growl" life="2000" />
+            <p:commandButton value="Log out" id="ajax"
+                             update="growl" actionListener="#{sessionBean.logout}"
+                             styleClass="ui-priority-primary" />
+        </h:form>
+
+    </p:layoutUnit>
+         
+            <p:layoutUnit position="center">
+                Center
+            </p:layoutUnit>
+    </p:layout>
 
 </h:body>
 
