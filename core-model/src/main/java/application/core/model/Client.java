@@ -5,6 +5,16 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "Client.findAllOrdered",
+                query = "SELECT client " +
+                        "FROM Client client " +
+                        "ORDER BY client.id ASC"
+        )
+
+
+})
 @Entity
 @Table(name = "client")
 
