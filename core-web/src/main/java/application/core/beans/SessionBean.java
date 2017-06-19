@@ -6,6 +6,7 @@ import application.core.api.manager.EmployeeManager;
 import application.core.model.Employee;
 import application.core.session.SessionUtils;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
 import javax.ejb.Stateless;
@@ -43,7 +44,7 @@ public class SessionBean implements Serializable {
     @ManagedProperty(value="#{registerInformationBean}")
     private RegisterInformationBean registerInformationBean;
 
-    //employeeManager for operations
+    //inject employeeManager for operations
     @EJB(beanInterface = EmployeeManager.class)
     private EmployeeManager employeeManager;
 
@@ -107,6 +108,7 @@ public class SessionBean implements Serializable {
             e.printStackTrace();
         }
     }
+
 
     public void register(ActionEvent actionEvent) {
         String          username            =   credentialsBean.getUsername();
@@ -198,6 +200,7 @@ public class SessionBean implements Serializable {
     public void redirectToLogin() throws IOException {
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
         externalContext.redirect("login.xhtml");
+        addMessage("You have to be logged in.");
     }
 
 
