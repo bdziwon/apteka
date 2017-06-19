@@ -8,6 +8,7 @@
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
+.idea/workspace.xml
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
@@ -17,6 +18,12 @@
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+
+core-ejb/target
+core-web/target
+core-api/target
+core-ear/target
+core-model/target
 
 # Gradle:
 .idea/**/gradle.xml
