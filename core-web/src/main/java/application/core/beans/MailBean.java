@@ -6,16 +6,18 @@ import application.core.beans.MailInfoBean;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 import java.io.Serializable;
+import java.util.Date;
 
 @ManagedBean(name = "mailBean")
 @RequestScoped
 public class MailBean implements Serializable {
 
     //inject credentials
-    @Inject
+    @ManagedProperty(value="#{mailInfoBean}")
     MailInfoBean mailInfoBean;
 
     //employeeManager for operations
@@ -43,13 +45,12 @@ public class MailBean implements Serializable {
 
     }
 
-    public void send() {
-        String  recipents    =   mailInfoBean.getRecipents();
-        String  subject    =   mailInfoBean.getSubject();
+    public void sendMail() {
+        Date data = new Date();
+
+
         String  text       = mailInfoBean.getText();
-        mailManager.sendMail(recipents, subject,text);
-        System.out.println(recipents);
-        System.out.println(subject);
+        mailManager.sendMail(text);
         System.out.println(text);
 
     }

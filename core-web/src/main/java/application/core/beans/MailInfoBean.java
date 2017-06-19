@@ -18,13 +18,7 @@ import java.io.Serializable;
 
 public class MailInfoBean implements Serializable {
 
-    @NotNull
 
-    private String recipents;
-
-    @NotNull
-
-    private String Subject;
     @NotNull
 
     private String text;
@@ -33,25 +27,12 @@ public class MailInfoBean implements Serializable {
 
     }
 
-    public String getRecipents() {
-        return recipents;
-    }
-
-    public String getSubject() {
-        return Subject;
-    }
 
     public String getText() {
         return text;
     }
 
-    public void setRecipents(String recipents) {
-        this.recipents = recipents;
-    }
 
-    public void setSubject(String subject) {
-        Subject = subject;
-    }
 
     public void setText(String text) {
         this.text = text;

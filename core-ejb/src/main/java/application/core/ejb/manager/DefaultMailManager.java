@@ -3,12 +3,10 @@ package application.core.ejb.manager;
 import application.core.api.manager.MailManager;
 
 import javax.ejb.Stateless;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.security.auth.Subject;
@@ -19,18 +17,21 @@ import javax.security.auth.Subject;
 @Stateless
 public class DefaultMailManager implements MailManager {
 
-        final String username = "hubert.sielecki95@gmail.com";
-        final String password = "Bucovia1972";
+        final String username = "paiprojekt2017@gmail.com";
+        final String password = "hubert123";
     @Override
-    public void sendMail(String recipents, String subject, String text) {
+    public void sendMail(String text) {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+
+        SimpleDateFormat simpleDateHere = new SimpleDateFormat("dd-MM-yyyy ");
 
         Session session = Session.getInstance(props,
-                new javax.mail.Authenticator() {
+                new Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(username, password);
                     }
@@ -41,8 +42,8 @@ public class DefaultMailManager implements MailManager {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(username));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(recipents));
-            message.setSubject(subject);
+                    InternetAddress.parse("paiprojekt2017@gmail.com"));
+            message.setSubject("zamowienie z dnia" + "" + simpleDateHere.format(new Date()));
             message.setText(text);
 
             Transport.send(message);
