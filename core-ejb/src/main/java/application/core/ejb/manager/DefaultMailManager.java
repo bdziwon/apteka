@@ -19,8 +19,8 @@ import javax.security.auth.Subject;
 @Stateless
 public class DefaultMailManager implements MailManager {
 
-        final String username = "hubert.sielecki95@gmail.com";
-        final String password = "Bucovia1972";
+        final String username = "paiprojekt2017@gmail.com";
+        final String password = "hubert123";
     @Override
     public void sendMail(String recipents, String subject, String text) {
         Properties props = new Properties();

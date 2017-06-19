@@ -43,7 +43,7 @@ public class MailBean implements Serializable {
 
     }
 
-    public void send() {
+    public void sendMail() {
         String  recipents    =   mailInfoBean.getRecipents();
         String  subject    =   mailInfoBean.getSubject();
         String  text       = mailInfoBean.getText();
