@@ -11,28 +11,40 @@
 <h:body>
     #{employeeBean.initialize()}
 
+    <p:layout style="min-width:400px; min-height: 1000px; height: 100%">
+        <p:layoutUnit position="west" resizable="true" size="25%" minSize="40" style="height: 100%">
+            <h3>Logged as:</h3>
+            <p:panelGrid columns="1" style="width: 100%">
+                <!--ensure validation-->
+                <f:validateBean>
+                    <p:row>
+                        <p:outputLabel>Username: #{employeeBean.employee.username} </p:outputLabel>
+                    </p:row>
+                    <p:row>
+                        <p:outputLabel>First Name: #{employeeBean.employee.firstName} </p:outputLabel>
+                    </p:row>
+                    <p:row>
+                        <p:outputLabel>Last Name: #{employeeBean.employee.lastName} </p:outputLabel>
+                    </p:row>
 
-    <!--<p:ribbon>-->
-        <!--    <p:tab title="User">-->
-        <!--        <p:ribbonGroup label="Log out">-->
-        <!--            <p:commandButton value="Log out"  type="button" />-->
-        <!--        </p:ribbonGroup>-->
-        <!--    </p:tab>-->
-    <!--</p:ribbon>-->
+                    <p:row rendered="#{not empty employeeBean.employee.addedRecipes}">
+                        <p:outputLabel>Total recipes: #{employeeBean.employee.addedRecipes.size}</p:outputLabel>
+                    </p:row>
+                </f:validateBean>
 
-    <p:layout style="min-width:400px;min-height:200px;">
-        <p:layoutUnit position="west" resizable="true" size="25%" minSize="40">
-        <p:outputLabel>Logged as: #{employeeBean.employee.firstName} #{employeeBean.employee.lastName}</p:outputLabel>
-        <h:form id="LogOut">
-            <p:growl id="growl" life="2000" />
-            <p:commandButton value="Log out" id="ajax"
-                             update="growl" actionListener="#{sessionBean.logout}"
-                             styleClass="ui-priority-primary" />
-        </h:form>
+            </p:panelGrid>
+
+             
+            <h:form id="LogOut">
+                <p:growl id="growl" life="2000" />
+                <p:commandButton value="Log out" id="ajax"
+                                 update="growl" actionListener="#{sessionBean.logout}"
+                                 styleClass="ui-priority-primary" />
+            </h:form>
 
     </p:layoutUnit>
          
-            <p:layoutUnit position="center">
+            <p:layoutUnit position="center" style="height: 100%">
                 Center
             </p:layoutUnit>
     </p:layout>
