@@ -9,5 +9,5 @@ import javax.ejb.Remote;
 public interface MailManager {
 
 
-    void sendMail(String recipents,String subject, String text);
+    void sendMail(String text);
 }
