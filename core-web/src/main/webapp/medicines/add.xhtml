@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Add medicine</title>
+    </h:head>
+    <h:body>
+        <!--#{employeeBean.initialize()}-->
+
+        <p:outputLabel>Insert new medicine. Note that if medicine with given name already exists,
+            edit operation will be performed. Fields with star mark (*) are required</p:outputLabel>
+
+        <p:outputPanel id="panel" autoUpdate="true">
+            <h:form id="add">
+                <p:panelGrid columns="1">
+                        <p:row>
+                            <h:inputHidden value="#{medicineInformationBean.id}" />
+                            <p:outputLabel for="name">*Name:</p:outputLabel>
+                            <p:inputText id="name" value="#{medicineInformationBean.name}">
+                                <p:ajax event="change" listener="#{medicineBean.updateInformationBean}"
+                                        process="@this" update="panel"></p:ajax>
+                            </p:inputText>
+                        </p:row>
+
+                        <p:row>
+                            <p:outputLabel for="price">*Price:</p:outputLabel>
+                            <p:inputText id="price" value="#{medicineInformationBean.price}">
+                            </p:inputText>
+                        </p:row>
+                        <p:row>
+                            <p:outputLabel for="quantity">*Quantity:</p:outputLabel>
+                            <p:inputText id="quantity" value="#{medicineInformationBean.quantity}">
+                            </p:inputText>
+                        </p:row>
+                        <p:row>
+                            <p:outputLabel for="description">Description:</p:outputLabel>
+                            <p:inputText id="description" value="#{medicineInformationBean.description}">
+                            </p:inputText>
+                        </p:row>
+                        <p:row>
+                            <p:outputLabel for = "type">*Type(bought/produced):</p:outputLabel>
+                            <p:selectOneMenu id="type" value="#{medicineInformationBean.type}" style="width:125px">
+                                <f:selectItem itemLabel="bought" itemValue="bought"/>
+                                <f:selectItem itemLabel="produced" itemValue="produced"/>
+                            </p:selectOneMenu>
+                        </p:row>
+
+                        <p:row>
+                            <p:outputLabel for = "replacementGroup">Replacement group</p:outputLabel>
+                            <p:selectOneMenu id="replacementGroup" value="#{medicineInformationBean.replacementGroup}"
+                                             effect="fade" filter="true" filterMatchMode="startsWith"
+                                             hideNoSelectionOption="true"
+                                             converter="#{replacementConverterBean}"
+                                             style="width:125px">
+                                <f:selectItem itemValue="#{null}" itemLabel="Select a group.."  noSelectionOption="true"/>
+                                <f:selectItems value="#{replacementGroupBean.getList()}" var="replacementGroup"
+                                               itemLabel="#{replacementGroup.name}" itemValue="#{replacementGroup}" />
+                            </p:selectOneMenu>
+                        </p:row>
+                </p:panelGrid>
+
+                <p:growl id="growl" life="2000"/>
+                <p:commandButton value="Continue" id="continue" update="growl" actionListener="#{medicineBean.addMedicine}" styleClass="ui-priority-primary" />
+        </h:form>
+        </p:outputPanel>
+
+
+    </h:body>
+</f:view>
+</html>
