@@ -19,12 +19,6 @@
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
-core-ejb/target
-core-web/target
-core-api/target
-core-ear/target
-core-model/target
-
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -113,3 +107,4 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 # End of https://www.gitignore.io/api/java,maven,java-web,intellij
+/core-api/target/

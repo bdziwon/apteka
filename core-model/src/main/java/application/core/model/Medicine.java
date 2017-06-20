@@ -1,6 +1,7 @@
 package application.core.model;
 
 import javax.persistence.*;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,6 +12,13 @@ import java.util.List;
                 name = "Medicine.findAllOrdered",
                 query = "SELECT medicine " +
                         "FROM Medicine medicine " +
+                        "ORDER BY medicine.id ASC"
+        ),
+        @NamedQuery(
+                name = "Medicine.findByName",
+                query = "SELECT medicine " +
+                        "FROM Medicine medicine " +
+                        "WHERE medicine.name = :name " +
                         "ORDER BY medicine.id ASC"
         )
 
@@ -28,15 +36,15 @@ public class Medicine implements Serializable {
     @Column(name = "id")
     private Long    id;
 
-    @NotNull
+    @NotNull(message = "Price cannot be empty")
     @Column(name = "price")
     private BigDecimal price;
 
-    @NotNull
+    @NotNull(message = "Name cannot be empty or longer than 25 characters")
     @Column(name = "name", length = 25)
     private String  name;
 
-    @NotNull
+    @NotNull(message = "Description cannot be empty or longer than 500 characters")
     @Column(name = "description", length = 500)
     private String  description;
 
@@ -47,11 +55,11 @@ public class Medicine implements Serializable {
     @OneToMany(mappedBy = "medicine", cascade = CascadeType.ALL)
     private List<MedicineOrder> orders;
 
-    @NotNull
+    @NotNull(message = "Type cannot be empty")
     @Column(name = "type")
     private String type = "bought";
 
-    @NotNull
+    @NotNull(message = "Quantity cannot be empty")
     @Column(name = "quantity")
     private Long quantity = 0L;
 
@@ -74,7 +82,7 @@ public class Medicine implements Serializable {
     }
 
     public void setReplacementGroup(ReplacementGroup replacementGroup) {
-        setReplacementGroup(replacementGroup);
+        this.replacementGroup = replacementGroup;
     }
 
     public BigDecimal getPrice() {

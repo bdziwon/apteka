@@ -60,7 +60,12 @@ public class EmployeeBean implements Serializable {
 
     public void redirectToLogin() throws IOException {
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
-        externalContext.redirect("login.xhtml");
+        externalContext.redirect(externalContext.getRequestContextPath() + "/login.xhtml");
+    }
+
+    public void redirectToMedicines() throws IOException {
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        externalContext.redirect("medicines");
     }
 
 

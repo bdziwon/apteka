@@ -3,13 +3,12 @@ package application.core.beans;
 
 import application.core.annotations.LoggedIn;
 import application.core.api.manager.EmployeeManager;
+import application.core.beans.autentication.CredentialsBean;
+import application.core.beans.autentication.RegisterInformationBean;
 import application.core.model.Employee;
 import application.core.session.SessionUtils;
 
-import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
-import javax.ejb.Stateful;
-import javax.ejb.Stateless;
 import javax.enterprise.context.SessionScoped;
 import javax.enterprise.inject.Produces;
 import javax.faces.bean.ManagedBean;
@@ -17,13 +16,10 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
-import javax.inject.Inject;
-import javax.inject.Named;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
 import javax.faces.application.FacesMessage;
-import javax.mail.Session;
 import javax.servlet.http.HttpSession;
 
 /**

@@ -21,4 +21,6 @@ public interface ReplacementGroupDAO {
     ReplacementGroup findReplacementGroup(Long id);
 
     List<ReplacementGroup> findallReplacementGroups();
+
+    ReplacementGroup findReplacementByName(String name);
 }

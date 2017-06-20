@@ -11,9 +11,6 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.security.auth.Subject;
 
-/**
- * Created by Hubert on 2017-06-18.
- */
 @Stateless
 public class DefaultMailManager implements MailManager {
 

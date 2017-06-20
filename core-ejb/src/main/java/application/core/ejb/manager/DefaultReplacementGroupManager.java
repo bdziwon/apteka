@@ -25,6 +25,11 @@ public class DefaultReplacementGroupManager implements ReplacementGroupManager {
     }
 
     @Override
+    public ReplacementGroup findReplacementByName(String name) {
+        return replacementGroupDAO.findReplacementByName(name);
+    }
+
+    @Override
     public void persistReplacementGroup(ReplacementGroup replacementGroup) {
         replacementGroupDAO.persistReplacementGroup(replacementGroup);
     }

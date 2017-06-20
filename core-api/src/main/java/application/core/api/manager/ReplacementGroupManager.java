@@ -23,4 +23,6 @@ public interface ReplacementGroupManager {
     void persistReplacementGroup(ReplacementGroup replacementGroup);
 
     void removeReplacementGroup(ReplacementGroup replacementGroup);
+
+    ReplacementGroup findReplacementByName(String s);
 }

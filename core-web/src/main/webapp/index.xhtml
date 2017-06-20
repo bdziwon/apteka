@@ -18,34 +18,57 @@
                 <!--ensure validation-->
                 <f:validateBean>
                     <p:row>
-                        <p:outputLabel>Username: #{employeeBean.employee.username} </p:outputLabel>
+                        <p:column>
+                            <p:outputLabel>Username: </p:outputLabel>
+                        </p:column>
+                        <p:column>
+                            <p:outputLabel>#{employeeBean.employee.username} </p:outputLabel>
+                        </p:column>
                     </p:row>
                     <p:row>
-                        <p:outputLabel>First Name: #{employeeBean.employee.firstName} </p:outputLabel>
+                        <p:column>
+                            <p:outputLabel>First Name: </p:outputLabel>
+                        </p:column>
+                        <p:column>
+                            <p:outputLabel>#{employeeBean.employee.firstName} </p:outputLabel>
+                        </p:column>
                     </p:row>
                     <p:row>
-                        <p:outputLabel>Last Name: #{employeeBean.employee.lastName} </p:outputLabel>
+                        <p:column>
+                            <p:outputLabel>Last Name: </p:outputLabel>
+                        </p:column>
+                        <p:column>
+                            <p:outputLabel>#{employeeBean.employee.lastName} </p:outputLabel>
+                        </p:column>
                     </p:row>
 
                     <p:row rendered="#{not empty employeeBean.employee.addedRecipes}">
-                        <p:outputLabel>Total recipes: #{employeeBean.employee.addedRecipes.size}</p:outputLabel>
+                        <p:column>
+                            <p:outputLabel>Total recipes: </p:outputLabel>
+                        </p:column>
+                        <p:column>
+                            <p:outputLabel>#{employeeBean.employee.addedRecipes.size}</p:outputLabel>
+                        </p:column>
                     </p:row>
                 </f:validateBean>
+
+
 
             </p:panelGrid>
 
              
             <h:form id="LogOut">
-                <p:growl id="growl" life="2000" />
-                <p:commandButton value="Log out" id="ajax"
-                                 update="growl" actionListener="#{sessionBean.logout}"
+                <p:commandButton value="Log out" id="ajax" actionListener="#{sessionBean.logout}"
                                  styleClass="ui-priority-primary" />
             </h:form>
 
     </p:layoutUnit>
          
             <p:layoutUnit position="center" style="height: 100%">
-                Center
+                <h:form id="medicines">
+                    <p:commandButton value="View/edit medicines" action="#{employeeBean.redirectToMedicines}"
+                              styleClass="ui-priority-primary" />
+    </h:form>
             </p:layoutUnit>
     </p:layout>
 

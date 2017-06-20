@@ -23,4 +23,6 @@ public interface MedicineManager {
     void persistMedicine(Medicine medicine);
 
     void removeMedicine(Medicine medicine);
+
+    Medicine findMedicineByName(String name) throws MedicineNotFoundException;
 }

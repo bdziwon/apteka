@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 
 /**
@@ -21,6 +22,18 @@ public class DefaultMedicineDAO implements MedicineDAO {
     @Override
     public Medicine findMedicine(Long id) {
         return entityManager.find(Medicine.class, id);
+    }
+
+    @Override
+    public Medicine findMedicineByName(String name) {
+        try {
+            return (Medicine) entityManager.createNamedQuery("Medicine.findByName")
+                    .setParameter("name", name)
+                    .getSingleResult();
+        }
+        catch (NoResultException e) {
+            return null;
+        }
     }
 
     @SuppressWarnings("unchecked")

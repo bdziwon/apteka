@@ -25,6 +25,15 @@ public class DefaultMedicineManager implements MedicineManager {
     }
 
     @Override
+    public Medicine findMedicineByName(String name) throws MedicineNotFoundException {
+        Medicine medicine = medicineDAO.findMedicineByName(name);
+        if (medicine == null) {
+            throw new MedicineNotFoundException();
+        }
+        return medicine;
+    }
+
+    @Override
     public void persistMedicine(Medicine medicine) {
         medicineDAO.persistMedicine(medicine);
     }

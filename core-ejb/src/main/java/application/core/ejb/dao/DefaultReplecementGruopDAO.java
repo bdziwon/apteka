@@ -8,6 +8,7 @@ import java.util.List;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 
 /**
@@ -27,6 +28,18 @@ public class DefaultReplecementGruopDAO implements ReplacementGroupDAO {
     @Override
     public List<ReplacementGroup> findallReplacementGroups() {
         return entityManager.createNamedQuery("ReplacementGroup.findAllOrdered").getResultList();
+    }
+
+    @Override
+    public ReplacementGroup findReplacementByName(String name) {
+        try {
+            return (ReplacementGroup) entityManager.createNamedQuery("ReplacementGroup.findByName")
+                    .setParameter("name", name)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+
     }
 
     @Override

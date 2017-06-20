@@ -22,4 +22,5 @@ public interface MedicineDAO {
 
     List<Medicine> findallMedicines();
 
+    Medicine findMedicineByName(String name);
 }
