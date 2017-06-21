@@ -1,6 +1,7 @@
 package application.core.api.dao;
 
 
+import application.core.model.Employee;
 import application.core.model.Recipe;
 
 import java.util.List;
@@ -21,4 +22,6 @@ public interface RecipeDAO {
     Recipe findRecipe(Long id);
 
     List<Recipe> findallRecipes();
+
+    List<Recipe> findRecipesByEmployee(Employee employee);
 }

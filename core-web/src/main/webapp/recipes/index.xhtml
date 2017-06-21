@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Leki</title>
+    </h:head>
+    <h:body>
+        #{employeeBean.initialize()}
+        <p:commandButton value="Add/Edit recipe" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+
+        <h:form id="RecipesForm">
+            <p:dataTable widgetVar="recipeTable" filteredValue="#{recipeBean.filteredRecipes}" id="recipelist" var="recipe" value="#{recipeBean.getRecipes()}">
+                <f:facet name="header">
+                    <p:outputPanel>
+                        <h:outputText value="Search all fields:" />
+                        <p:inputText id="globalFilter" onkeyup="PF('recipeTable').filter()" style="width:150px" placeholder="Enter keyword"/>
+                    </p:outputPanel>
+                </f:facet>
+                <p:column headerText="id" filterBy = "#{recipe.id}" filterMatchMode="contains">
+                    <h:outputText value="#{recipe.id}" />
+                </p:column>
+                <p:column headerText="client pesel" filterBy = "#{recipe.client.pesel}" filterMatchMode="contains">
+                    <h:outputText value="#{recipe.client.pesel}"/>
+                </p:column>
+
+                <p:column headerText="employee username" filterBy = "#{recipe.employee.username}" filterMatchMode="contains">
+                    <h:outputText value="#{recipe.employee.username}"/>
+                </p:column>
+
+                <p:column headerText="medicines on list" filterBy = "#{recipe.medicines.size()}" filterMatchMode="contains">
+                    <h:outputText value="#{recipe.medicines.size()}"/>
+                </p:column>
+
+                <p:column headerText="delete">
+                    <p:commandButton icon="ui-icon-trash"
+                                     title="Delete this recipe"
+                                     actionListener="#{recipeBean.removeRecipe(recipe)}"
+                                     ajax="false"/>
+                </p:column>
+
+            </p:dataTable>
+
+            <p:commandButton  icon="images/pdf.png" value="Export to pdf">
+                <p:dataExporter type="pdf" target="recipelist" fileName="recipe" pageOnly="true"/>
+            </p:commandButton>
+
+
+        </h:form>
+
+
+    </h:body>
+</f:view>
+</html>

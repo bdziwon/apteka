@@ -1,5 +1,6 @@
 package application.core.ejb.dao;
 import application.core.api.dao.RecipeDAO;
+import application.core.model.Employee;
 import application.core.model.Recipe;
 
 
@@ -27,6 +28,14 @@ public class DefaultRecipeDAO implements RecipeDAO {
     @Override
     public List<Recipe> findallRecipes() {
         return entityManager.createNamedQuery("Recipe.findAllOrdered").getResultList();
+    }
+
+    @Override
+    public List<Recipe> findRecipesByEmployee(Employee employee) {
+        return entityManager
+                .createNamedQuery("Recipe.findByEmployee")
+                .setParameter("employee_id", employee.getId())
+                .getResultList();
     }
 
     @Override

@@ -134,7 +134,7 @@ public class SessionBean implements Serializable {
             employee.setUsername(username);
             employee.setPassword(password);
 
-            employeeManager.persistEmployee(employee);
+            employee = employeeManager.mergeEmployee(employee);
 
             this.employee = employee;
 

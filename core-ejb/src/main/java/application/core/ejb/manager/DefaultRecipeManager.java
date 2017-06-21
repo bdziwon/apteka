@@ -5,6 +5,7 @@ package application.core.ejb.manager;
         import application.core.api.dao.RecipeDAO;
         import application.core.api.exception.RecipeNotFoundException;
         import application.core.api.manager.RecipeManager;
+        import application.core.model.Employee;
         import application.core.model.Recipe;
 
         import java.util.List;
@@ -21,6 +22,11 @@ public class DefaultRecipeManager implements RecipeManager {
     @Override
     public void removeRecipe(Recipe recipe) {
         recipeDao.removeRecipe(recipe);
+    }
+
+    @Override
+    public List<Recipe> findRecipesByEmployee(Employee employee) {
+        return recipeDao.findRecipesByEmployee(employee);
     }
 
     @Override

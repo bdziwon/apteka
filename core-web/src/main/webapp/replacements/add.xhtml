@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Add replacementGroup</title>
+    </h:head>
+    <h:body>
+        #{employeeBean.initialize()}
+
+        <p:outputLabel>Insert new replacementGroup. Note that if replacementGroup with given id already exists,
+            edit operation will be performed. Fields with star mark (*) are required</p:outputLabel>
+
+        <p:outputPanel id="panel" autoUpdate="true">
+            <h:form id="add">
+                <p:panelGrid columns="1">
+                        <p:row>
+                            <h:inputHidden value="#{replacementGroupInformationBean.id}" />
+                            <p:outputLabel for="id">ID (use it for editing):</p:outputLabel>
+                            <p:inputText id="id" value="#{replacementGroupInformationBean.id}">
+                                <p:ajax event="change" listener="#{replacementGroupBean.updateInformationBean}"
+                                        process="@this" update="panel"></p:ajax>
+                            </p:inputText>
+                        </p:row>
+
+                        <p:row>
+                            <p:outputLabel for="name">*Name:</p:outputLabel>
+                            <p:inputText id="name" value="#{replacementGroupInformationBean.name}">
+                            </p:inputText>
+                        </p:row>
+                </p:panelGrid>
+
+                <p:growl id="growl" life="2000"/>
+                <p:commandButton value="Continue" id="continue" update="growl" actionListener="#{replacementGroupBean.addReplacementGroup}" styleClass="ui-priority-primary" />
+                <p:commandButton value="Back"  id="index" update="growl" actionListener="#{navigationBean.redirectTo('index.xhtml')}" styleClass="ui-priority-primary" process="@this"/>
+
+            </h:form>
+        </p:outputPanel>
+
+
+    </h:body>
+</f:view>
+</html>

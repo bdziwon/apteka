@@ -1,6 +1,7 @@
 package application.core.api.manager;
 
 import application.core.api.exception.RecipeNotFoundException;
+import application.core.model.Employee;
 import application.core.model.Recipe;
 
 import java.util.List;
@@ -22,4 +23,7 @@ public interface RecipeManager {
     void persistRecipe(Recipe recipe);
 
     void removeRecipe(Recipe recipe);
+
+
+    List<Recipe> findRecipesByEmployee(Employee employee);
 }

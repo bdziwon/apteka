@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Leki</title>
+    </h:head>
+    <h:body>
+        #{employeeBean.initialize()}
+        <p:commandButton value="Add/Edit replacementGroup" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+
+        <h:form id="ReplacementGroupsForm">
+            <p:dataTable widgetVar="replacementGroupTable" filteredValue="#{replacementGroupBean.filteredReplacementGroups}" id="replacementGrouplist" var="replacementGroup" value="#{replacementGroupBean.getReplacementGroups()}">
+                <f:facet name="header">
+                    <p:outputPanel>
+                        <h:outputText value="Search all fields:" />
+                        <p:inputText id="globalFilter" onkeyup="PF('replacementGroupTable').filter()" style="width:150px" placeholder="Enter keyword"/>
+                    </p:outputPanel>
+                </f:facet>
+                <p:column headerText="id" filterBy = "#{replacementGroup.id}" filterMatchMode="contains">
+                    <h:outputText value="#{replacementGroup.id}" />
+                </p:column>
+                <p:column headerText="name" filterBy = "#{replacementGroup.name}" filterMatchMode="contains">
+                    <h:outputText value="#{replacementGroup.name}" />
+                </p:column>
+
+                <p:column headerText="delete">
+                    <p:commandButton icon="ui-icon-trash"
+                                     title="Delete this replacementGroup"
+                                     actionListener="#{replacementGroupBean.removeReplacementGroup(replacementGroup)}"
+                                     ajax="false"/>
+                </p:column>
+            </p:dataTable>
+
+            <p:commandButton  icon="images/pdf.png" value="Export to pdf">
+                <p:dataExporter type="pdf" target="replacementGrouplist" fileName="replacementGroup" pageOnly="true"/>
+            </p:commandButton>
+
+
+        </h:form>
+
+
+    </h:body>
+</f:view>
+</html>

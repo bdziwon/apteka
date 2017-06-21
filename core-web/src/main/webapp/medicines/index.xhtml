@@ -12,7 +12,7 @@
     </h:head>
     <h:body>
         #{employeeBean.initialize()}
-        <p:commandButton value="Add medicine" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Add/Edit medicine" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
         <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
 
         <h:form id="MedicinesForm">
@@ -50,8 +50,9 @@
                     <p:commandButton icon="ui-icon-trash"
                                      title="Delete this medicine"
                                      actionListener="#{medicineBean.removeMedicine(medicine)}"
-                                     process="@this"/>
+                                     ajax="false"/>
                 </p:column>
+
             </p:dataTable>
 
             <p:commandButton  icon="images/pdf.png" value="Export to pdf">

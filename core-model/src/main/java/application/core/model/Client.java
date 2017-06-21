@@ -92,4 +92,10 @@ public class Client implements Serializable {
     public void setPesel(String pesel) {
         this.pesel = pesel;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Client that = (Client) obj;
+        return this.id.equals(that.id);
+    }
 }

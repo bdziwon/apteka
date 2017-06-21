@@ -59,7 +59,7 @@
                                              converter="#{replacementConverterBean}"
                                              style="width:125px">
                                 <f:selectItem itemValue="#{null}" itemLabel="Select a group.."  noSelectionOption="true"/>
-                                <f:selectItems value="#{replacementGroupBean.getList()}" var="replacementGroup"
+                                <f:selectItems value="#{replacementGroupBean.replacementGroups}" var="replacementGroup"
                                                itemLabel="#{replacementGroup.name}" itemValue="#{replacementGroup}" />
                             </p:selectOneMenu>
                         </p:row>
