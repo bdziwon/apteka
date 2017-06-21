@@ -3,6 +3,7 @@ package application.core.beans.medicine;
 
 import application.core.api.exception.MedicineNotFoundException;
 import application.core.api.manager.MedicineManager;
+import application.core.beans.utility.NavigationBean;
 import application.core.model.Medicine;
 
 import javax.ejb.EJB;
@@ -55,11 +56,6 @@ public class MedicineBean implements Serializable {
 
     public void removeMedicine(Medicine medicine) {
         medicineManager.removeMedicine(medicine);
-    }
-
-    public void redirectToAddMedicine() throws IOException {
-        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
-        externalContext.redirect("add.xhtml");
     }
 
     public void updateInformationBean() {

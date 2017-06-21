@@ -30,7 +30,7 @@
             </p:panelGrid>
             <p:growl id="growl" life="2000" />
             <p:commandButton value="Log in" id="login" update="growl" actionListener="#{sessionBean.login}" styleClass="ui-priority-primary" />
-            <p:commandButton value="Register"  id="register" update="growl" actionListener="#{sessionBean.redirectToRegister}" styleClass="ui-priority-primary" process="@this"/>
+            <p:commandButton value="Register"  id="register" update="growl" actionListener="#{navigationBean.redirectTo('register.xhtml')}" styleClass="ui-priority-primary" process="@this"/>
             <p:commandButton value="Back"  id="index" update="growl" actionListener="#{sessionBean.redirectToIndex}" styleClass="ui-priority-primary" process="@this"/>
 
         </h:form>

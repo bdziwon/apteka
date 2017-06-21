@@ -12,16 +12,16 @@
     </h:head>
     <h:body>
         #{employeeBean.initialize()}
-        <p:commandButton value="Add medicine" actionListener="#{medicineBean.redirectToAddMedicine}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Add medicine" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
 
         <h:form id="MedicinesForm">
             <p:dataTable id="medicinelist" var="medicine" value="#{medicineBean.getMedicines()}">
-                <p:column headerText="description">
-                    <h:outputText value="#{medicine.description}"/>
-                </p:column>
-
                 <p:column headerText="name">
                     <h:outputText value="#{medicine.name}"/>
+                </p:column>
+                <p:column headerText="description">
+                    <h:outputText value="#{medicine.description}"/>
                 </p:column>
 
                 <p:column headerText="price">
@@ -35,6 +35,11 @@
                 <p:column headerText="type">
                     <h:outputText value="#{medicine.type}"/>
                 </p:column>
+
+                <p:column headerText="replacement family">
+                    <h:outputText value="#{medicine.replacementGroup.name}"/>
+                </p:column>
+
                 <p:column headerText="delete">
                     <p:commandButton icon="ui-icon-trash"
                                      title="Delete this medicine"
@@ -43,11 +48,11 @@
                 </p:column>
             </p:dataTable>
 
-            <h3>Export Page Data Only</h3>
-            <h:commandLink>
-                <p:graphicImage url="images/pdf.png"/>
+            <p:commandButton  icon="images/pdf.png" value="Export to pdf">
                 <p:dataExporter type="pdf" target="medicinelist" fileName="medicine" pageOnly="true"/>
-            </h:commandLink>
+            </p:commandButton>
+
+
         </h:form>
 
 

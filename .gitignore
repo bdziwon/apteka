@@ -108,3 +108,7 @@ buildNumber.properties
 
 # End of https://www.gitignore.io/api/java,maven,java-web,intellij
 /core-api/target/
+/core-ear/target/
+/core-ejb/target/
+/core-model/target/
+/core-web/target/

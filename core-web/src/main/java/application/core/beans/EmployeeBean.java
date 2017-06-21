@@ -2,6 +2,7 @@ package application.core.beans;
 
 
 import application.core.api.manager.EmployeeManager;
+import application.core.beans.utility.NavigationBean;
 import application.core.model.Employee;
 import application.core.session.SessionUtils;
 
@@ -23,6 +24,18 @@ public class EmployeeBean implements Serializable {
     @EJB(beanInterface = EmployeeManager.class)
     private EmployeeManager employeeManager;
 
+    public NavigationBean getNavigationBean() {
+        return navigationBean;
+    }
+
+    public void setNavigationBean(NavigationBean navigationBean) {
+        this.navigationBean = navigationBean;
+    }
+
+    //inject navigation bean
+    @ManagedProperty(value="#{navigationBean}")
+    private NavigationBean navigationBean;
+
     private Employee employee = SessionUtils.getEmployee();
 
     public EmployeeBean() {
@@ -32,11 +45,7 @@ public class EmployeeBean implements Serializable {
 
         System.out.println("EmployeeBean: initialize");
         if (!isLoggedIn()) {
-            try {
-                redirectToLogin();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            navigationBean.redirectFromTop("/login.xhtml");
         }
     }
 
@@ -57,17 +66,6 @@ public class EmployeeBean implements Serializable {
     public boolean isLoggedIn() {
         return employee != null;
     }
-
-    public void redirectToLogin() throws IOException {
-        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
-        externalContext.redirect(externalContext.getRequestContextPath() + "/login.xhtml");
-    }
-
-    public void redirectToMedicines() throws IOException {
-        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
-        externalContext.redirect("medicines");
-    }
-
 
     public EmployeeManager getEmployeeManager() {
         return employeeManager;
