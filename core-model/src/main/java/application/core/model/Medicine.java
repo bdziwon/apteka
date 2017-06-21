@@ -73,6 +73,14 @@ public class Medicine implements Serializable {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return id+","+
+                name+",";
+
+
+    }
+
     public void setId(Long id) {
         this.id = id;
     }

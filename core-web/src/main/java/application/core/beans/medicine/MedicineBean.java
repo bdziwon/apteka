@@ -5,12 +5,16 @@ import application.core.api.exception.MedicineNotFoundException;
 import application.core.api.manager.MedicineManager;
 import application.core.beans.utility.NavigationBean;
 import application.core.model.Medicine;
+import org.primefaces.context.RequestContext;
 
 import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.*;
+import javax.faces.component.UIComponent;
+import javax.faces.component.html.HtmlDataTable;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
+import javax.faces.event.ActionEvent;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
@@ -28,6 +32,8 @@ public class MedicineBean implements Serializable {
     //inject medicine information for adding and editing purposes
     @ManagedProperty(value="#{medicineInformationBean}")
     MedicineInformationBean medicineInformationBean;
+
+    public List<Medicine> filteredMedicines;
 
     public MedicineManager getMedicineManager() {
         return medicineManager;
@@ -55,8 +61,11 @@ public class MedicineBean implements Serializable {
     }
 
     public void removeMedicine(Medicine medicine) {
+        System.out.println("removing medicine: "+medicine.toString());
         medicineManager.removeMedicine(medicine);
+
     }
+
 
     public void updateInformationBean() {
         Medicine medicine = null;
@@ -112,4 +121,12 @@ public class MedicineBean implements Serializable {
         FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
+    public List<Medicine> getFilteredMedicines() {
+        return filteredMedicines;
+    }
+
+    public void setFilteredMedicines(List<Medicine> filteredMedicines) {
+        this.filteredMedicines = filteredMedicines;
+    }
 }
+

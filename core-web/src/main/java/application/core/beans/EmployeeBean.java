@@ -24,6 +24,8 @@ public class EmployeeBean implements Serializable {
     @EJB(beanInterface = EmployeeManager.class)
     private EmployeeManager employeeManager;
 
+    private final boolean REQUIRE_LOGIN = false;
+
     public NavigationBean getNavigationBean() {
         return navigationBean;
     }
@@ -44,7 +46,7 @@ public class EmployeeBean implements Serializable {
     public void initialize() {
 
         System.out.println("EmployeeBean: initialize");
-        if (!isLoggedIn()) {
+        if (REQUIRE_LOGIN && !isLoggedIn()) {
             navigationBean.redirectFromTop("/login.xhtml");
         }
     }
