@@ -10,6 +10,7 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <resolve-scope>apteka:</resolve-scope>
+      <unqualified-resolve-schemas>apteka:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

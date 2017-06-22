@@ -46,10 +46,10 @@
                 </p:column>
 
             </p:dataTable>
-
-            <p:commandButton  icon="images/pdf.png" value="Export to pdf">
-                <p:dataExporter type="pdf" target="recipelist" fileName="recipe" pageOnly="true"/>
-            </p:commandButton>
+            <h:commandLink>
+                <p:graphicImage url="images/pdf.png"  height="50px" width="50px" />
+                <p:dataExporter type="pdf" target="recipelist" fileName="Recipes" pageOnly="true" />
+            </h:commandLink>
 
 
         </h:form>
