@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Client</title>
+    </h:head>
+    <h:body>
+        #{employeeBean.initialize()}
+        <p:commandButton value="Add/Edit client" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+
+        <h:form id="ClientForm">
+            <p:dataTable widgetVar="ClientTable" filteredValue="#{clientBean.filtredClients}" id="ClientList" var="client" value="#{clientBean.getClients()}">
+                        <f:facet name="header">
+                            <p:outputPanel>
+                                <h:outputText value="Search all fields:" />
+                                <p:inputText id="globalFilter" onkeyup="PF('ClientTable').filter()" style="width:150px" placeholder="Enter keyword"/>
+                            </p:outputPanel>
+                        </f:facet>
+                <p:column headerText="id" filterBy = "#{client.id}" filterMatchMode="contains">
+                    <h:outputText value="#{client.id}" />
+                </p:column>
+                <p:column headerText="name" filterBy = "#{client.firstName}" filterMatchMode="contains">
+                    <h:outputText value="#{client.firstName}" />
+
+                </p:column>
+                <p:column headerText="LastName" filterBy = "#{client.lastName}" filterMatchMode="contains">
+                    <h:outputText value="#{client.lastName}" />
+
+                </p:column>
+                <p:column headerText="Pesel" filterBy = "#{client.pesel}" filterMatchMode="contains">
+                    <h:outputText value="#{client.pesel}" />
+
+                </p:column>
+                <p:column headerText="PhoneNumber" filterBy = "#{client.phoneNumber}" filterMatchMode="contains">
+                    <h:outputText value="#{client.phoneNumber}" />
+
+                </p:column>
+
+                <p:column headerText="delete">
+                    <p:commandButton icon="ui-icon-trash"
+                                     title="Delete this replacementGroup"
+                                     actionListener="#{clientBean.removeClient(client)}"
+                                     ajax="false"/>
+                </p:column>
+            </p:dataTable>
+            <h:commandLink>
+                <p:graphicImage url="images/pdf.png"  height="50px" width="50px" />
+                <p:dataExporter type="pdf" target="ClientList" fileName="client" pageOnly="true" />
+            </h:commandLink>
+        </h:form>
+
+
+
+
+    </h:body>
+</f:view>
+</html>

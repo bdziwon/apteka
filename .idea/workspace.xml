@@ -58,21 +58,131 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java">
+      <file leaf-file-name="ClientBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="185">
+              <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="23" />
+              <folding>
+                <element signature="e#3311#3312#0" expanded="true" />
+                <element signature="e#3363#3364#0" expanded="true" />
+                <element signature="e#3610#3611#0" expanded="true" />
+                <element signature="e#3660#3661#0" expanded="true" />
+                <element signature="e#3723#3724#0" expanded="true" />
+                <element signature="e#3767#3768#0" expanded="true" />
+                <element signature="e#3962#3963#0" expanded="true" />
+                <element signature="e#4015#4016#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplacementGroupBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="method#ReplacementGroupBean#0;class#ReplacementGroupBean#0" expanded="false" />
+                <element signature="method#addReplacementGroup#0;class#ReplacementGroupBean#0" expanded="false" />
+                <element signature="method#addMessage#0;class#ReplacementGroupBean#0" expanded="false" />
+                <element signature="method#removeReplacementGroup#0;class#ReplacementGroupBean#0" expanded="false" />
+                <element signature="method#setReplacementGroupManager#0;class#ReplacementGroupBean#0" expanded="false" />
+                <element signature="method#getReplacementGroupInformationBean#0;class#ReplacementGroupBean#0" expanded="false" />
+                <element signature="method#setReplacementGroupInformationBean#0;class#ReplacementGroupBean#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplacementGroup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/ReplacementGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientList.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/ClientList.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="32" column="27" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="32" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientInformationBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <folding>
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1384#1385#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+                <element signature="e#1518#1519#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/client/add.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/add.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/index.xhtml">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="473">
+              <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -86,14 +196,13 @@
         <option value="AnnotationType" />
         <option value="cdi.beans_1_0" />
         <option value="Interface" />
-        <option value="jsf" />
         <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>replacementGroups</find>
       <find>getList</find>
       <find>filterendR</find>
       <find>remove</find>
@@ -123,6 +232,7 @@
       <find>persis</find>
       <find>size</find>
       <find>medici</find>
+      <find>filtre</find>
     </findStrings>
     <replaceStrings>
       <replace>employeeBeanAlternative</replace>
@@ -148,9 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java" />
-        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineManager.java" />
-        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java" />
         <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java" />
         <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/RegisterInformationBean.java" />
@@ -181,9 +288,7 @@
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/MedicineBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/RecipeManager.java" />
         <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java" />
         <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/RecipeDAO.java" />
@@ -199,6 +304,11 @@
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/replacements/index.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml" />
+        <option value="$PROJECT_DIR$/core-web/src/main/webapp/client/add.xhtml" />
+        <option value="$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml" />
       </list>
     </option>
   </component>
@@ -395,37 +505,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recipes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medicines" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,10 +536,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="session" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,7 +607,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
+              <option name="myItemId" value="replacement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,6 +638,80 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -584,26 +734,26 @@
     <property name="SearchEverywhereHistoryKey" value="emp&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean&#10;Recipe&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Emplo&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Employee.java&#10;s&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/utility/SessionBean.java&#10;log&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/login.xhtml&#10;Empl&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Employee.java&#10;Rec&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Def&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java&#10;Reci&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Client&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Client.java&#10;Na&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/utility/NavigationBean.java&#10;Medicine&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;Medici&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;MedicineB&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;index&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/medicines/index.xhtml&#10;.jar&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/lib/javax.persistence.jar&#10;redirectFromTop&#9;PSI&#9;JAVA://application.core.beans.utility.NavigationBean#redirectFromTop&#10;redirectTo&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#redirectToAddMedicine&#10;redirectTO&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#redirectToIndex&#10;redirec&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToMedicines&#10;redirect&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToLogin&#10;redire&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#redirectToIndex&#10;addMessa&#9;PSI&#9;JAVA://application.core.beans.SessionBean#addMessage&#10;addMedicine&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#addMedicine&#10;Replace&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/ReplacementGroup.java&#10;Repla&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java&#10;addMedi&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#addMedicine&#10;Replacem&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/ReplacementGroup.java&#10;Replaceme&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/ReplacementGroup.java&#10;ReplacementGroup&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/ReplacementGroup.java&#10;getAsOb&#9;PSI&#9;JAVA://application.core.beans.replacement.ReplacementConverterBean#getAsObject&#10;ReplacementGr&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/ReplacementGroup.java&#10;Default&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java&#10;Repl&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java&#10;MedicineDAO&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java&#10;addMedicin&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#addMedicine&#10;DefaultMed&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java&#10;Med&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;Emp&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Employee.java&#10;Replacement&#9;PSI&#9;JAVA://application.core.model.ReplacementGroup&#10;MedicineManager&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java&#10;UpdateInfor&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#updateInformationBean&#10;Defa&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java&#10;medicineDA&#9;FILE&#9;file://E:/apteka_git/apteka/core-api/src/main/java/application/core/api/dao/MedicineDAO.java&#10;redirectToMedi&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToMedicines&#10;index.&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/index.xhtml&#10;DefaultMa&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java&#10;sendMail&#9;PSI&#9;JAVA://application.core.api.manager.MailManager#sendMail&#10;mailmana&#9;FILE&#9;file://E:/apteka_git/apteka/core-api/src/main/java/application/core/api/manager/MailManager.java&#10;pers&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/resources/META-INF/persistence.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="application.core.api.session" />
-      <recent name="application.core.beans" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\WEB-INF" />
+      <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines\images" />
+      <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hubert\Documents\GitHub\apteka\core-web\src\main\webapp\client" />
       <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\recipes" />
       <recent name="E:\apteka_git\apteka\core-web\src\main\java\application\core\beans\recipe" />
       <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\replacements" />
       <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines" />
-      <recent name="E:\apteka_git\apteka\core-web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="application.core.beans.client" />
       <recent name="application.core.beans.replacement" />
       <recent name="application.core.beans" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\WEB-INF" />
-      <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines\images" />
-      <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="application.core.api.session" />
+      <recent name="application.core.beans" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1152,7 +1302,7 @@
       <workItem from="1498043862658" duration="23006000" />
       <workItem from="1498117432018" duration="1953000" />
       <workItem from="1498124236581" duration="1674000" />
-      <workItem from="1498129462599" duration="2831000" />
+      <workItem from="1498129462599" duration="8805000" />
     </task>
     <task id="LOCAL-00001" summary="Dodano index.xhtml jako stronę startową">
       <created>1497871212932</created>
@@ -1263,7 +1413,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118780000" />
+    <option name="totallyTimeSpent" value="124754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1276,18 +1426,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.50385606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12737921" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12737921" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1300,10 +1449,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.49614397" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34542587" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" x="22" y="154" width="1556" height="312" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" x="22" y="154" width="1556" height="312" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25899744" sideWeight="0.5069307" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30673498" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2672035" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1371,31 +1520,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/ThemeService.java" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/Theme.java" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/SelectOneMenuView.java" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/ThemeConverter.java" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/onMenu.xhtml" />
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/ReplacementGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="71" column="80" lean-forward="false" selection-start-line="71" selection-start-column="80" selection-end-line="71" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.replacement_group" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/images/pdf.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1415,20 +1539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="107" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupInformationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/add.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1474,35 +1584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="88" column="20" lean-forward="false" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="72" column="107" lean-forward="false" selection-start-line="72" selection-start-column="107" selection-end-line="72" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementConverterBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/RecipeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1563,7 +1645,6 @@
     </entry>
     <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.recipe" />
     <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.client" />
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" />
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1647,26 +1728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1705,10 +1770,186 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ReplacementGroupManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupInformationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ClientManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementConverterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/ClientList.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/add.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/client/add.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="23" />
+          <folding>
+            <element signature="e#3311#3312#0" expanded="true" />
+            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="e#3610#3611#0" expanded="true" />
+            <element signature="e#3660#3661#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
+            <element signature="e#3767#3768#0" expanded="true" />
+            <element signature="e#3962#3963#0" expanded="true" />
+            <element signature="e#4015#4016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="method#ReplacementGroupBean#0;class#ReplacementGroupBean#0" expanded="false" />
+            <element signature="method#addReplacementGroup#0;class#ReplacementGroupBean#0" expanded="false" />
+            <element signature="method#addMessage#0;class#ReplacementGroupBean#0" expanded="false" />
+            <element signature="method#removeReplacementGroup#0;class#ReplacementGroupBean#0" expanded="false" />
+            <element signature="method#setReplacementGroupManager#0;class#ReplacementGroupBean#0" expanded="false" />
+            <element signature="method#getReplacementGroupInformationBean#0;class#ReplacementGroupBean#0" expanded="false" />
+            <element signature="method#setReplacementGroupInformationBean#0;class#ReplacementGroupBean#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/ReplacementGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="447">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
           <folding />
         </state>
       </provider>
