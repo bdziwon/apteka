@@ -13,8 +13,10 @@
     </h:head>
 
     <h:body>
+        <h3 style="margin-top:0">PHARMACY</h3>
         <h:form id="register">
-            <p:panelGrid columns="1">
+            <p:panel header="Register user" style="width:50%">
+            <h:panelGrid columns="1" cellpadding="5">
                 <!--ensure validation-->
                 <f:validateBean>
                     <p:row>
@@ -35,10 +37,11 @@
                     </p:row>
                 </f:validateBean>
 
-            </p:panelGrid>
+            </h:panelGrid>
+            </p:panel>
             <p:growl id="growl" life="2000" />
-            <p:commandButton value="Register" id="register" updatse="growl" actionListener="#{sessionBean.register}" styleClass="ui-priority-primary" />
-            <p:commandButton value="Back"  id="index" update="growl" actionListener="#{sessionBean.redirectToLogin}" styleClass="ui-priority-primary" process="@this"/>
+            <p:commandButton value="Register" id="register" icon="ui-icon-document" update="growl" actionListener="#{sessionBean.register}" styleClass="ui-priority-primary" />
+            <p:commandButton value="Back"  id="index" icon="ui-icon-arrow-1-w" update="growl" actionListener="#{sessionBean.redirectToLogin}" styleClass="ui-priority-primary" process="@this"/>
 
         </h:form>
     </h:body>

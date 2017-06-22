@@ -13,23 +13,23 @@
     <h:body>
         #{employeeBean.initialize()}
 
-        <p:outputLabel>Insert new recipe. Note that if recipe with given id already exists,
-            edit operation will be performed. Fields with star mark (*) are required</p:outputLabel>
+        <h3>PHARMACY - Insert new recipe</h3>
+        <p:outputLabel>Note that if recipe with given id already exists,
+            edit operation will be performed.</p:outputLabel>
+        <p:outputLabel>Fields with star mark (*) are required</p:outputLabel>
 
         <p:outputPanel id="panel" autoUpdate="true">
             <h:form id="add">
-                <p:panelGrid columns="1">
-                        <p:row>
+                <p:panel id="panel2" header="Add recipe" style="margin-bottom:10px; width:50%">
+                <p:panelGrid columns="1" style="width:100%">
+
                             <h:inputHidden value="#{recipeInformationBean.id}" />
                             <p:outputLabel for="id">ID:</p:outputLabel>
                             <p:inputText id="id" value="#{recipeInformationBean.id}">
                                 <p:ajax event="change" listener="#{recipeBean.updateInformationBean}"
                                         process="@this" update="panel"></p:ajax>
                             </p:inputText>
-                        </p:row>
 
-
-                        <p:row>
                             <p:outputLabel for = "client">Client</p:outputLabel>
                             <p:selectOneMenu id="client" value="#{recipeInformationBean.client}"
                                              effect="fade" filter="true" filterMatchMode="startsWith"
@@ -40,12 +40,13 @@
                                 <f:selectItems value="#{clientBean.clients}" var="client"
                                                itemLabel="#{client.pesel}" itemValue="#{client}" />
                             </p:selectOneMenu>
-                        </p:row>
+
                 </p:panelGrid>
+                </p:panel>
 
                 <p:growl id="growl" life="2000"/>
-                <p:commandButton value="Continue" id="continue" update="growl" actionListener="#{recipeBean.addRecipe}" styleClass="ui-priority-primary" />
-                <p:commandButton value="Back"  id="index" update="growl" actionListener="#{navigationBean.redirectTo('index.xhtml')}" styleClass="ui-priority-primary" process="@this"/>
+                <p:commandButton value="Continue" id="continue" icon="ui-icon-circle-plus" update="growl" actionListener="#{recipeBean.addRecipe}" styleClass="ui-priority-primary" />
+                <p:commandButton value="Back"  id="index" icon="ui-icon-arrow-1-w" update="growl" actionListener="#{navigationBean.redirectTo('index.xhtml')}" styleClass="ui-priority-primary" process="@this"/>
 
             </h:form>
         </p:outputPanel>

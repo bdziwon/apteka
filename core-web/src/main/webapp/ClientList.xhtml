@@ -8,14 +8,16 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:head>
-        <title>Leki</title>
+        <title>Client List</title>
     </h:head>
     <h:body>
         #{employeeBean.initialize()}
 
         <h:form id="ClientList">
 
-            <p:dataTable id="ClientListTable" var="client" value="#{ClientBean.getClients()}">
+            <h3>PHARMACY - Select Client List</h3>
+
+            <p:dataTable id="ClientListTable" var="client" value="#{ClientBean.getClients()}" reflow="true" rows="10" paginator="true">
                 <p:column headerText="First Name">
                     <h:outputText value="#{client.firstName}" />
                 </p:column>
@@ -34,9 +36,9 @@
 
             </p:dataTable>
 
-            <h3>Export Client List</h3>
+            <h4>Export Client List</h4>
             <h:commandLink>
-                <p:graphicImage url="pdf.png" />
+                <p:graphicImage url="pdf.png"  height="50px" width="50px" />
                 <p:dataExporter type="pdf" target="ClientListTable" fileName="Clients" pageOnly="true" />
             </h:commandLink>
         </h:form>

@@ -11,6 +11,7 @@
 <h:body>
     #{employeeBean.initialize()}
 
+    <h3 style="margin-top:0">PHARMACY</h3>
     <p:layout style="min-width:400px; min-height: 1000px; height: 100%">
         <p:layoutUnit position="west" resizable="true" size="25%" minSize="40" style="height: 100%">
             <h3>Logged as:</h3>
@@ -58,7 +59,7 @@
 
              
             <h:form id="LogOut">
-                <p:commandButton value="Log out" id="ajax" actionListener="#{sessionBean.logout}"
+                <p:commandButton value="Log out" id="ajax" icon="ui-icon-arrowstop-1-w" actionListener="#{sessionBean.logout}"
                                  styleClass="ui-priority-primary" />
             </h:form>
 
@@ -66,13 +67,13 @@
          
             <p:layoutUnit position="center" style="height: 100%">
                 <h:form id="medicines">
-                    <p:commandButton value="View/edit medicines" action="#{navigationBean.redirectTo('medicines')}"
+                    <p:commandButton value="View/edit medicines" icon="ui-icon-folder-open" action="#{navigationBean.redirectTo('medicines')}"
                               styleClass="ui-priority-primary" />
-                    <p:commandButton value="View/edit replacementGroups" action="#{navigationBean.redirectTo('replacements')}"
+                    <p:commandButton value="View/edit replacementGroups" icon="ui-icon-folder-open" action="#{navigationBean.redirectTo('replacements')}"
                                      styleClass="ui-priority-primary" />
-                    <p:commandButton value="View/edit clients" action="#{navigationBean.redirectTo('client')}"
+                    <p:commandButton value="View/edit clients" icon="ui-icon-folder-open" action="#{navigationBean.redirectTo('client')}"
                                      styleClass="ui-priority-primary" />
-                    <p:commandButton value="View/edit recipes" action="#{navigationBean.redirectTo('recipes')}"
+                    <p:commandButton value="View/edit recipes" icon="ui-icon-folder-open" action="#{navigationBean.redirectTo('recipes')}"
                                      styleClass="ui-priority-primary" />
     </h:form>
             </p:layoutUnit>

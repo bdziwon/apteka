@@ -12,8 +12,13 @@
     </h:head>
     <h:body>
         #{employeeBean.initialize()}
+
+        <h3>PHARMACY: RECIPES </h3>
+
+        <h:panelGrid columns="2" cellpadding="5">
         <p:commandButton value="Add/Edit recipe" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
         <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+        </h:panelGrid>
 
         <h:form id="RecipesForm">
             <p:dataTable widgetVar="recipeTable" filteredValue="#{recipeBean.filteredRecipes}" id="recipelist" var="recipe" value="#{recipeBean.getRecipes()}">
@@ -46,6 +51,7 @@
                 </p:column>
 
             </p:dataTable>
+            <h4>Export Recipe List</h4>
             <h:commandLink>
                 <p:graphicImage url="images/pdf.png"  height="50px" width="50px" />
                 <p:dataExporter type="pdf" target="recipelist" fileName="Recipes" pageOnly="true" />

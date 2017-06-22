@@ -13,7 +13,9 @@
     </h:head>
 
     <h:body>
+        <h3>PHARMACY</h3>
         <h:form id="login">
+            <p:panel header="Send mail" style="width:50%">
             <p:panelGrid columns="1">
                 <!--ensure validation-->
                 <f:validateBean>
@@ -24,8 +26,10 @@
                 </f:validateBean>
 
             </p:panelGrid>
+            </p:panel>
+
             <p:growl id="growl" life="2000" />
-            <p:commandButton value=" Send" id="send" update="growl" actionListener="#{mailBean.sendMail()}" styleClass="ui-priority-primary" />
+            <p:commandButton value=" Send" id="send" icon="ui-icon-mail-closed" update="growl" actionListener="#{mailBean.sendMail()}" styleClass="ui-priority-primary" />
 
 
         </h:form>

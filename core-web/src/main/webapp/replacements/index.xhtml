@@ -12,8 +12,13 @@
     </h:head>
     <h:body>
         #{employeeBean.initialize()}
-        <p:commandButton value="Add/Edit replacementGroup" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
-        <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+
+        <h3>PHARMACY: REPLACEMENTS </h3>
+
+        <h:panelGrid columns="2" cellpadding="5">
+        <p:commandButton value="Add/Edit replacementGroup" icon="ui-icon-newwin" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Back"  id="index" icon="ui-icon-arrow-1-w" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+        </h:panelGrid>
 
         <h:form id="ReplacementGroupsForm">
             <p:dataTable widgetVar="replacementGroupTable" filteredValue="#{replacementGroupBean.filteredReplacementGroups}" id="replacementGrouplist" var="replacementGroup" value="#{replacementGroupBean.getReplacementGroups()}">
@@ -37,10 +42,11 @@
                                      ajax="false"/>
                 </p:column>
             </p:dataTable>
-<h:commandLink>
-    <p:graphicImage url="images/pdf.png"  height="50px" width="50px" />
-    <p:dataExporter type="pdf" target="replacementGrouplist" fileName="Replacements" pageOnly="true" />
-</h:commandLink>
+            <h4>Export Replacement List</h4>
+            <h:commandLink>
+                <p:graphicImage url="images/pdf.png"  height="50px" width="50px" />
+                <p:dataExporter type="pdf" target="replacementGrouplist" fileName="Replacements" pageOnly="true" />
+            </h:commandLink>
         </h:form>
 
 
