@@ -25,7 +25,6 @@ public class RecipeInformationBean implements Serializable {
     @NotNull
     private Employee employee = SessionUtils.getEmployee();
 
-
     @NotNull
     private List<MedicineOrder> medicines;
 

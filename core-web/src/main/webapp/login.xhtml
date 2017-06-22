@@ -15,8 +15,6 @@
     <h:body>
         <h:form id="login">
             <p:panelGrid columns="1">
-                <!--ensure validation-->
-                <f:validateBean>
                     <p:row>
                         <p:outputLabel for = "username">Username:</p:outputLabel>
                         <p:inputText id = "username" value = "#{credentialsBean.username}" />
@@ -25,8 +23,6 @@
                         <p:outputLabel for = "password">Password:</p:outputLabel>
                         <p:password id = "password" value = "#{credentialsBean.password}" />
                     </p:row>
-                </f:validateBean>
-
             </p:panelGrid>
             <p:growl id="growl" life="2000" />
             <p:commandButton value="Log in" id="login" update="growl" actionListener="#{sessionBean.login}" styleClass="ui-priority-primary" />
