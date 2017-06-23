@@ -26,7 +26,7 @@
                         <p:outputLabel for="id">ID:</p:outputLabel>
                         <p:inputText id="id" value="#{recipeInformationBean.id}">
                             <p:ajax event="change" listener="#{recipeBean.updateInformationBean}"
-                                    process="@this" update="panel"></p:ajax>
+                                    process="@this" update="panel" />
                         </p:inputText>
 
                         <p:outputLabel for="client">Client</p:outputLabel>
@@ -99,8 +99,8 @@
 
                         <p:column headerText="delete">
                             <p:commandButton icon="ui-icon-trash"
-                                             title="Delete this replacementGroup"
-                                             actionListener="#{recipeInformationBean.medicines.remove(medicineOrder)}"
+                                             title="Delete this medicine order"
+                                             actionListener="#{recipeBean.removeMedicineOrder(medicineOrder)}"
                                              update="table" ajax="false"/>
                         </p:column>
                         </p:dataTable>

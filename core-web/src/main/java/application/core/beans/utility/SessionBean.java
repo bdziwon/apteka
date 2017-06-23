@@ -30,7 +30,7 @@ import javax.servlet.http.HttpSession;
 @SessionScoped
 public class SessionBean implements Serializable {
 
-    private final int expirationTimeInSeconds = 120;
+    private final int expirationTimeInSeconds = 900;
 
     //inject credentials
     @ManagedProperty(value="#{credentialsBean}")
@@ -47,6 +47,9 @@ public class SessionBean implements Serializable {
     //inject employeeManager for operations
     @EJB(beanInterface = EmployeeManager.class)
     private EmployeeManager employeeManager;
+
+    @ManagedProperty(value = "#{messageBean}")
+    MessageBean messageBean;
 
     //logged employee, should be not null when logged
     private Employee employee = SessionUtils.getEmployee();
@@ -70,7 +73,7 @@ public class SessionBean implements Serializable {
         matchedEmployees = employeeManager.findEmployeesByCredentials(username, password);
 
         if (matchedEmployees.isEmpty()) {
-            addMessage("User does not exist");
+            messageBean.addMessage("User does not exist");
             //TODO: user not found, login failed
         } else {
             //validation successful
@@ -79,7 +82,7 @@ public class SessionBean implements Serializable {
 
             //checks if user is already logged (pervent 2 cients)
             if (SessionUtils.getEmployee() != null) {
-                addMessage("This session is already logged, log out to sign into new user");
+                messageBean.addMessage("This session is already logged, log out to sign into new user");
                 return;
             }
             session.setAttribute("employee",employee);
@@ -88,7 +91,7 @@ public class SessionBean implements Serializable {
             //redirect to index
             try {
                 redirectToIndex();
-                addMessage("Login sucessful");
+                messageBean.addMessage("Login sucessful");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -97,7 +100,7 @@ public class SessionBean implements Serializable {
 
     public void logout(ActionEvent actionEvent) {
         if (!isLoggedIn()) {
-            addMessage("Already logged out");
+            messageBean.addMessage("Already logged out");
         } else {
             HttpSession session = SessionUtils.getSession();
             session.invalidate();
@@ -124,7 +127,7 @@ public class SessionBean implements Serializable {
 
         //checking if employee exist
         if (!matchedEmployees.isEmpty()) {
-            addMessage("This username is occupied.");
+            messageBean.addMessage("This username is occupied.");
         } else {
 
             //creating new employee
@@ -142,7 +145,7 @@ public class SessionBean implements Serializable {
 
             //checks if user is already logged (locally)
             if (SessionUtils.getEmployee() != null) {
-                addMessage("This session is logged, log out to sign into new user");
+                messageBean.addMessage("This session is logged, log out to sign into new user");
                 return;
             }
             session.setAttribute("employee",employee);
@@ -151,7 +154,7 @@ public class SessionBean implements Serializable {
             //redirect to index
             try {
                 redirectToIndex();
-                addMessage("Register sucessful");
+                messageBean.addMessage("Register sucessful");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -189,7 +192,7 @@ public class SessionBean implements Serializable {
     public void redirectToIndex() throws IOException {
         //show message when cant go back - logged out
         if (!isLoggedIn()) {
-            addMessage("You have to be logged in for this operation.");
+            messageBean.addMessage("You have to be logged in for this operation.");
         } else {
             navigationBean.redirectTo("index.xhtml");
         }
@@ -198,13 +201,7 @@ public class SessionBean implements Serializable {
 
     public void redirectToLogin() throws IOException {
         navigationBean.redirectTo("login.xhtml");
-        addMessage("You have to be logged in.");
-    }
-
-
-    public void addMessage(String summary) {
-        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary,null);
-        FacesContext.getCurrentInstance().addMessage(null, message);
+        messageBean.addMessage("You have to be logged in.");
     }
 
     public CredentialsBean getCredentialsBean() {
@@ -241,5 +238,13 @@ public class SessionBean implements Serializable {
 
     public void setNavigationBean(NavigationBean navigationBean) {
         this.navigationBean = navigationBean;
+    }
+
+    public MessageBean getMessageBean() {
+        return messageBean;
+    }
+
+    public void setMessageBean(MessageBean messageBean) {
+        this.messageBean = messageBean;
     }
 }

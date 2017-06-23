@@ -12,10 +12,6 @@ import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 
-/**
- * Created by Bartek on 20.06.2017.
- */
-
 @FacesConverter(value = "medicineConverter")
 @ManagedBean(name = "medicineConverterBean")
 public class MedicineConverterBean implements Converter {
@@ -54,5 +50,6 @@ public class MedicineConverterBean implements Converter {
     public void setMedicineManager(MedicineManager medicineManager) {
         this.medicineManager = medicineManager;
     }
+
 
 }

@@ -21,17 +21,19 @@ public class RecipeInformationBean implements Serializable {
 
     private Long id = null;
 
-    @NotNull
+    @NotNull(message = "Can't add recipe, please choose client from list.")
     private Client client;
 
-    @NotNull
+    @NotNull(message = "Authorization failed.")
     private Employee employee = SessionUtils.getEmployee();
 
     @NotNull
     private List<MedicineOrder> medicines;
 
+    @NotNull(message = "Select medicine to add.")
     private Medicine selectedMedicine;
 
+    @NotNull(message = "Fill quantity field.")
     private Long selectedQuantity;
 
     public RecipeInformationBean() {

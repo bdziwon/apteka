@@ -14,9 +14,6 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * Created by Bartek on 20.06.2017.
- */
 @ManagedBean(name = "medicineInformationBean")
 @RequestScoped
 public class MedicineInformationBean implements Serializable {

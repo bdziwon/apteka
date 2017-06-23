@@ -19,12 +19,12 @@ public class MedicineOrder implements Serializable {
     private Long quantity = 0L;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "id_medicine")
     private Medicine medicine;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "id_recipe")
     private Recipe recipe;
 
@@ -61,5 +61,17 @@ public class MedicineOrder implements Serializable {
 
     public void setRecipe(Recipe recipe) {
         this.recipe = recipe;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        MedicineOrder that = (MedicineOrder) (obj);
+        if (that == this) {
+            return true;
+        }
+        return this.id.equals(that.getId());
     }
 }

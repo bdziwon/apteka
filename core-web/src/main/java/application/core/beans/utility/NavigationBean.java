@@ -2,6 +2,7 @@ package application.core.beans.utility;
 
 import javax.decorator.Decorator;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
@@ -10,7 +11,7 @@ import java.io.Serializable;
 
 
 @ManagedBean(name = "navigationBean")
-@SessionScoped
+@ApplicationScoped
 public class NavigationBean implements Serializable {
 
     public NavigationBean() {
@@ -43,4 +44,6 @@ public class NavigationBean implements Serializable {
             e.printStackTrace();
         }
     }
+
+
 }

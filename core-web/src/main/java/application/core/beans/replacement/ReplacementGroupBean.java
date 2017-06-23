@@ -2,6 +2,7 @@ package application.core.beans.replacement;
 
 import application.core.api.exception.ReplacementGroupNotFoundException;
 import application.core.api.manager.ReplacementGroupManager;
+import application.core.beans.utility.MessageBean;
 import application.core.model.ReplacementGroup;
 
 import javax.ejb.EJB;
@@ -23,6 +24,9 @@ public class ReplacementGroupBean implements Serializable {
     //inject medicine information for adding and editing purposes
     @ManagedProperty(value="#{replacementGroupInformationBean}")
     ReplacementGroupInformationBean replacementGroupInformationBean;
+
+    @ManagedProperty(value="#{messageBean}")
+    MessageBean messageBean;
 
     List<ReplacementGroup> filteredReplacementGroups;
 
@@ -60,14 +64,8 @@ public class ReplacementGroupBean implements Serializable {
 
         replacementGroup = replacementGroupManager.mergeReplacementGroup(replacementGroup);
         replacementGroupInformationBean.setId(replacementGroup.getId());
-        addMessage("ReplacementGroup updated successfully, to work with other user change 'name' field");
+        messageBean.addMessage("ReplacementGroup updated successfully, to work with other user change 'name' field");
 
-    }
-
-
-    public void addMessage(String summary) {
-        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary,null);
-        FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
     public List<ReplacementGroup> getFilteredReplacementGroups() {
@@ -104,5 +102,11 @@ public class ReplacementGroupBean implements Serializable {
         return replacementGroupManager.findallReplacementGroups();
     }
 
+    public MessageBean getMessageBean() {
+        return messageBean;
+    }
 
+    public void setMessageBean(MessageBean messageBean) {
+        this.messageBean = messageBean;
+    }
 }

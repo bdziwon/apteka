@@ -5,6 +5,7 @@ import application.core.annotations.LoggedIn;
 import application.core.api.exception.ClientNotFoundException;
 import application.core.api.manager.ClientManager;
 import application.core.api.manager.MedicineManager;
+import application.core.beans.utility.MessageBean;
 import application.core.model.Employee;
 import application.core.model.Client;
 import application.core.model.Recipe;
@@ -26,9 +27,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * Created by Hubert on 2017-06-18.
- */
 @ManagedBean(name = "clientBean")
 @RequestScoped
 public class ClientBean implements Serializable{
@@ -38,6 +36,9 @@ public class ClientBean implements Serializable{
 
     @ManagedProperty(value="#{clientInformationBean}")
     ClientInformationBean clientInformationBean;
+
+    @ManagedProperty(value = "#{messageBean}")
+    MessageBean messageBean;
 
     private List<Client> filtredClients;
 
@@ -80,14 +81,8 @@ public class ClientBean implements Serializable{
 
         client = clientManager.mergeClient(client);
         clientInformationBean.setId(client.getId());
-        addMessage("ReplacementGroup updated successfully, to work with other user change 'name' field");
+        messageBean.addMessage("ReplacementGroup updated successfully, to work with other user change 'name' field");
 
-    }
-
-
-    public void addMessage(String summary) {
-        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary,null);
-        FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
     public List<Client> getFiltredClients() {
@@ -127,6 +122,16 @@ public class ClientBean implements Serializable{
     public void setFiltredClients(List<Client> filtredClients) {
         this.filtredClients = filtredClients;
     }
+
+    public MessageBean getMessageBean() {
+        return messageBean;
+    }
+
+    public void setMessageBean(MessageBean messageBean) {
+        this.messageBean = messageBean;
+    }
+
+
 }
 
 

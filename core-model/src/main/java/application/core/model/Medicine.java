@@ -48,7 +48,7 @@ public class Medicine implements Serializable {
     @Column(name = "description", length = 500)
     private String  description;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "id_replacements")
     private ReplacementGroup replacementGroup;
 

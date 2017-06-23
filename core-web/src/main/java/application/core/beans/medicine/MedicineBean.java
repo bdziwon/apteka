@@ -3,26 +3,16 @@ package application.core.beans.medicine;
 
 import application.core.api.exception.MedicineNotFoundException;
 import application.core.api.manager.MedicineManager;
-import application.core.beans.utility.NavigationBean;
+import application.core.beans.utility.MessageBean;
 import application.core.model.Medicine;
-import org.primefaces.context.RequestContext;
 
 import javax.ejb.EJB;
-import javax.faces.application.FacesMessage;
-import javax.faces.bean.*;
-import javax.faces.component.UIComponent;
-import javax.faces.component.html.HtmlDataTable;
-import javax.faces.context.ExternalContext;
-import javax.faces.context.FacesContext;
-import javax.faces.event.ActionEvent;
-import java.io.IOException;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.RequestScoped;
 import java.io.Serializable;
 import java.util.List;
 
-
-/**
- * Created by Hubert on 2017-06-18.
- */
 @ManagedBean(name = "medicineBean")
 @RequestScoped
 public class MedicineBean implements Serializable {
@@ -30,8 +20,11 @@ public class MedicineBean implements Serializable {
     private MedicineManager medicineManager;
 
     //inject medicine information for adding and editing purposes
-    @ManagedProperty(value="#{medicineInformationBean}")
+    @ManagedProperty(value = "#{medicineInformationBean}")
     MedicineInformationBean medicineInformationBean;
+
+    @ManagedProperty(value = "#{messageBean}")
+    MessageBean messageBean;
 
     public List<Medicine> filteredMedicines;
 
@@ -61,7 +54,7 @@ public class MedicineBean implements Serializable {
     }
 
     public void removeMedicine(Medicine medicine) {
-        System.out.println("removing medicine: "+medicine.toString());
+        System.out.println("removing medicine: " + medicine.toString());
         medicineManager.removeMedicine(medicine);
 
     }
@@ -72,7 +65,7 @@ public class MedicineBean implements Serializable {
 
         try {
             System.out.println("updateInformationBean: searching medicine with name: " +
-                    ""+medicineInformationBean.getName());
+                    "" + medicineInformationBean.getName());
             medicine = medicineManager.findMedicineByName(medicineInformationBean.getName());
         } catch (MedicineNotFoundException e) {
             //do not update any form fields, medicine with given name not found
@@ -95,30 +88,25 @@ public class MedicineBean implements Serializable {
     }
 
     public void addMedicine() {
-            Medicine medicine = new Medicine();
-            medicine.setId(medicineInformationBean.getId());
-            System.out.println("Inserting medicine with id = " +medicine.getId());
-            medicine.setReplacementGroup(medicineInformationBean.getReplacementGroup());
-            medicine.setType(medicineInformationBean.getType());
-            medicine.setQuantity(medicineInformationBean.getQuantity());
-            medicine.setDescription(medicineInformationBean.getDescription());
-            medicine.setPrice(medicineInformationBean.getPrice());
-            medicine.setName(medicineInformationBean.getName());
-            medicine.setOrders(medicineInformationBean.getOrders());
+        Medicine medicine = new Medicine();
+        medicine.setId(medicineInformationBean.getId());
+        System.out.println("Inserting medicine with id = " + medicine.getId());
+        medicine.setReplacementGroup(medicineInformationBean.getReplacementGroup());
+        medicine.setType(medicineInformationBean.getType());
+        medicine.setQuantity(medicineInformationBean.getQuantity());
+        medicine.setDescription(medicineInformationBean.getDescription());
+        medicine.setPrice(medicineInformationBean.getPrice());
+        medicine.setName(medicineInformationBean.getName());
+        medicine.setOrders(medicineInformationBean.getOrders());
 
-            System.out.println("id = " + medicine.getId());
-            System.out.println("name = " + medicine.getName());
-            System.out.println("type = " + medicine.getType());
+        System.out.println("id = " + medicine.getId());
+        System.out.println("name = " + medicine.getName());
+        System.out.println("type = " + medicine.getType());
 
-            medicine = medicineManager.mergeMedicine(medicine);
-            medicineInformationBean.setId(medicine.getId());
-            addMessage("Medicine updated successfully, to work with other user change 'name' field");
+        medicine = medicineManager.mergeMedicine(medicine);
+        medicineInformationBean.setId(medicine.getId());
+        messageBean.addMessage("Medicine updated successfully, to work with other user change 'name' field");
 
-    }
-
-    public void addMessage(String summary) {
-        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary,null);
-        FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
     public List<Medicine> getFilteredMedicines() {
@@ -127,6 +115,14 @@ public class MedicineBean implements Serializable {
 
     public void setFilteredMedicines(List<Medicine> filteredMedicines) {
         this.filteredMedicines = filteredMedicines;
+    }
+
+    public MessageBean getMessageBean() {
+        return messageBean;
+    }
+
+    public void setMessageBean(MessageBean messageBean) {
+        this.messageBean = messageBean;
     }
 }
 

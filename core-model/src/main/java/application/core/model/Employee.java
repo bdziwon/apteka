@@ -57,7 +57,7 @@ public class Employee implements Serializable {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "employee", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "employee")
     private List<Recipe> addedRecipes;
 
     public Long getId() {
