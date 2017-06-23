@@ -26,7 +26,7 @@
                         <h:inputHidden value="#{clientInformationBean.id}" />
                         <p:outputLabel for="id">ID (use it for editing):</p:outputLabel>
                         <p:inputText id="id" value="#{clientInformationBean.id}">
-                            <p:ajax event="change" listener="#{clientInformationBean.updateInformationBean}"
+                            <p:ajax event="change" listener="#{clientBean.updateInformationBean}"
                                     process="@this" update="panel"></p:ajax>
                         </p:inputText>
 

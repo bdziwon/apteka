@@ -18,11 +18,12 @@ public class ClientInformationBean implements Serializable {
 
     private Long id = null;
 
-    @NotNull
-    @Length(min = 1, max = 25, message = "Name cannot be empty or longer than 25 characters.")
     private String name;
-    private String pesel;
+
+    private Long pesel;
+
     private String lastname;
+
     private  String phoneNumber;
 
 
@@ -45,14 +46,6 @@ public class ClientInformationBean implements Serializable {
         this.name = name;
     }
 
-    public String getPesel() {
-        return pesel;
-    }
-
-    public void setPesel(String pesel) {
-        this.pesel = pesel;
-    }
-
     public String getLastName() {
         return lastname;
     }
@@ -67,5 +60,13 @@ public class ClientInformationBean implements Serializable {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public Long getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(Long pesel) {
+        this.pesel = pesel;
     }
 }

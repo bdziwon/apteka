@@ -39,7 +39,7 @@ public class ClientBean implements Serializable{
     @ManagedProperty(value="#{clientInformationBean}")
     ClientInformationBean clientInformationBean;
 
-    List<Client> filtredClients;
+    private List<Client> filtredClients;
 
     public ClientBean(){
 
@@ -50,7 +50,7 @@ public class ClientBean implements Serializable{
         try {
             client = clientManager
                     .findClient(clientInformationBean.getId());
-        } catch (ClientNotFoundException e) {
+        } catch (ClientNotFoundException e  ) {
             //do not update any form fields, replacementGroup with given name not found
             clientInformationBean.setId(null);
             System.out.println("updateInformationBean:ReplacementGroupNotFoundException");
@@ -124,7 +124,9 @@ public class ClientBean implements Serializable{
         return clientManager.findallClients();
     }
 
-
+    public void setFiltredClients(List<Client> filtredClients) {
+        this.filtredClients = filtredClients;
+    }
 }
 
 

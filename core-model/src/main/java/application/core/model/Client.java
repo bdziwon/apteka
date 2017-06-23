@@ -43,7 +43,7 @@ public class Client implements Serializable {
 
     @NotNull
     @Column(name = "pesel")
-    private String pesel;
+    private Long pesel;
 
     public Long getId() {
         return id;
@@ -85,17 +85,17 @@ public class Client implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getPesel() {
-        return pesel;
-    }
-
-    public void setPesel(String pesel) {
-        this.pesel = pesel;
-    }
-
     @Override
     public boolean equals(Object obj) {
         Client that = (Client) obj;
         return this.id.equals(that.id);
+    }
+
+    public Long getPesel() {
+        return pesel;
+    }
+
+    public void setPesel(Long pesel) {
+        this.pesel = pesel;
     }
 }
