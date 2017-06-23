@@ -28,7 +28,38 @@ public class MedicineOrder implements Serializable {
     @JoinColumn(name = "id_recipe")
     private Recipe recipe;
 
+    public MedicineOrder() {
+    }
+
     public Long getId() {
         return null;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Long quantity) {
+        this.quantity = quantity;
+    }
+
+    public Medicine getMedicine() {
+        return medicine;
+    }
+
+    public void setMedicine(Medicine medicine) {
+        this.medicine = medicine;
+    }
+
+    public Recipe getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(Recipe recipe) {
+        this.recipe = recipe;
     }
 }

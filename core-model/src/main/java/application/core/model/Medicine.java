@@ -144,5 +144,11 @@ public class Medicine implements Serializable {
     public void setQuantity(Long quantity) {
         this.quantity = quantity;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Medicine that = (Medicine) obj;
+        return  that.id.equals(this.getId());
+    }
 }
 

@@ -3,7 +3,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:p="http://primefaces.org/ui"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
@@ -21,34 +20,97 @@
         <p:outputPanel id="panel" autoUpdate="true">
             <h:form id="add">
                 <p:panel id="panel2" header="Add recipe" style="margin-bottom:10px; width:50%">
-                <p:panelGrid columns="1" style="width:100%">
+                    <p:panelGrid columns="1" style="width:100%">
 
-                            <h:inputHidden value="#{recipeInformationBean.id}" />
-                            <p:outputLabel for="id">ID:</p:outputLabel>
-                            <p:inputText id="id" value="#{recipeInformationBean.id}">
-                                <p:ajax event="change" listener="#{recipeBean.updateInformationBean}"
-                                        process="@this" update="panel"></p:ajax>
-                            </p:inputText>
+                        <h:inputHidden value="#{recipeInformationBean.id}"/>
+                        <p:outputLabel for="id">ID:</p:outputLabel>
+                        <p:inputText id="id" value="#{recipeInformationBean.id}">
+                            <p:ajax event="change" listener="#{recipeBean.updateInformationBean}"
+                                    process="@this" update="panel"></p:ajax>
+                        </p:inputText>
 
-                            <p:outputLabel for = "client">Client</p:outputLabel>
-                            <p:selectOneMenu id="client" value="#{recipeInformationBean.client}"
-                                             effect="fade" filter="true" filterMatchMode="startsWith"
-                                             hideNoSelectionOption="true"
-                                             converter="#{clientConverterBean}"
-                                             style="width:125px">
-                                <f:selectItem itemValue="#{null}" itemLabel="Select a client.."  noSelectionOption="true"/>
-                                <f:selectItems value="#{clientBean.clients}" var="client"
-                                               itemLabel="#{client.pesel}" itemValue="#{client}" />
-                            </p:selectOneMenu>
+                        <p:outputLabel for="client">Client</p:outputLabel>
+                        <p:selectOneMenu id="client" value="#{recipeInformationBean.client}"
+                                         effect="fade" filter="true" filterMatchMode="startsWith"
+                                         hideNoSelectionOption="true"
+                                         converter="#{clientConverterBean}"
+                                         style="width:125px">
+                            <f:selectItem itemValue="#{null}" itemLabel="Select a client.." noSelectionOption="true"/>
+                            <f:selectItems value="#{clientBean.clients}" var="client"
+                                           itemLabel="#{client.pesel}" itemValue="#{client}"/>
+                        </p:selectOneMenu>
 
-                </p:panelGrid>
+                    </p:panelGrid>
                 </p:panel>
 
                 <p:growl id="growl" life="2000"/>
-                <p:commandButton value="Continue" id="continue" icon="ui-icon-circle-plus" update="growl" actionListener="#{recipeBean.addRecipe}" styleClass="ui-priority-primary" />
-                <p:commandButton value="Back"  id="index" icon="ui-icon-arrow-1-w" update="growl" actionListener="#{navigationBean.redirectTo('index.xhtml')}" styleClass="ui-priority-primary" process="@this"/>
+                <p:commandButton value="Save" id="save" icon="ui-icon-circle-plus" update="growl"
+                                 actionListener="#{recipeBean.addRecipe}" styleClass="ui-priority-primary"/>
+                <p:commandButton value="Back" id="index" icon="ui-icon-arrow-1-w" update="growl"
+                                 actionListener="#{navigationBean.redirectTo('index.xhtml')}"
+                                 styleClass="ui-priority-primary" process="@this"/>
 
             </h:form>
+
+            <br/>
+
+            <h:form id="addorder">
+                <p:panel id="medicineOrderPanel" header="Insert medicine order" style="margin-bottom:10px; width:50%">
+                    <p:panelGrid columns="1" style="width:100%">
+
+                        <p:outputLabel for="medicine">Medicine</p:outputLabel>
+                        <p:selectOneMenu id="medicine" value="#{recipeInformationBean.selectedMedicine}"
+                                         effect="fade" filter="true" filterMatchMode="startsWith"
+                                         hideNoSelectionOption="true"
+                                         converter="#{medicineConverterBean}"
+                                         style="width:125px">
+                            <f:selectItem itemValue="#{null}" itemLabel="Select a medicine.." noSelectionOption="true"/>
+                            <f:selectItems value="#{medicineBean.medicines}" var="medicine"
+                                           itemLabel="#{medicine.name}" itemValue="#{medicine}"/>
+                        </p:selectOneMenu>
+
+                        <p:outputLabel for="quantity">*Quantity:</p:outputLabel>
+                        <p:inputText id="quantity" value="#{recipeInformationBean.selectedQuantity}">
+                        </p:inputText>
+
+                    </p:panelGrid>
+                </p:panel>
+
+                <p:commandButton value="Add" id="add" icon="ui-icon-circle-plus" update="table"
+                                 actionListener="#{recipeBean.addMedicineOrder}" styleClass="ui-priority-primary"/>
+
+            </h:form>
+
+        </p:outputPanel>
+
+        <p:outputPanel id="table" autoUpdate="true">
+
+            <h:form id="medicineOrder">
+                    <p:dataTable widgetVar="medicineOrderTable" id="medicineOrderList"
+                                 var="medicineOrder" value="#{recipeInformationBean.medicines}">
+
+                        <p:column headerText="medicine">
+                            <h:outputText value="#{medicineOrder.medicine.name}"/>
+                        </p:column>
+
+                        <p:column headerText="quantity" >
+                            <h:outputText value="#{medicineOrder.quantity}"/>
+                        </p:column>
+
+                        <p:column headerText="delete">
+                            <p:commandButton icon="ui-icon-trash"
+                                             title="Delete this replacementGroup"
+                                             actionListener="#{recipeInformationBean.medicines.remove(medicineOrder)}"
+                                             update="table" ajax="false"/>
+                        </p:column>
+                        </p:dataTable>
+                        <h4>Export Replacement List</h4>
+                        <h:commandLink>
+                        <p:graphicImage url="images/pdf.png" height="50px" width="50px"/>
+                        <p:dataExporter type="pdf" target="replacementGrouplist" fileName="Replacements"
+                                        pageOnly="true"/>
+                    </h:commandLink>
+                </h:form>
         </p:outputPanel>
 
 

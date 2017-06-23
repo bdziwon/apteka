@@ -24,7 +24,7 @@ public class EmployeeBean implements Serializable {
     @EJB(beanInterface = EmployeeManager.class)
     private EmployeeManager employeeManager;
 
-    private final boolean REQUIRE_LOGIN = false;
+    private final boolean REQUIRE_LOGIN = true;
 
     public NavigationBean getNavigationBean() {
         return navigationBean;

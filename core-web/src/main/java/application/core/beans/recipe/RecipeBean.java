@@ -4,6 +4,7 @@ package application.core.beans.recipe;
 import application.core.api.exception.RecipeNotFoundException;
 import application.core.api.manager.RecipeManager;
 import application.core.model.Employee;
+import application.core.model.MedicineOrder;
 import application.core.model.Recipe;
 import application.core.session.SessionUtils;
 
@@ -11,9 +12,10 @@ import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.RequestScoped;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -21,13 +23,13 @@ import java.util.List;
  * Created by Hubert on 2017-06-18.
  */
 @ManagedBean(name = "recipeBean")
-@RequestScoped
+@ViewScoped
 public class RecipeBean implements Serializable {
     @EJB(beanInterface = RecipeManager.class)
     private RecipeManager recipeManager;
 
     //inject recipe information for adding and editing purposes
-    @ManagedProperty(value="#{recipeInformationBean}")
+    @ManagedProperty(value = "#{recipeInformationBean}")
     RecipeInformationBean recipeInformationBean;
 
     public List<Recipe> filteredRecipes;
@@ -63,7 +65,7 @@ public class RecipeBean implements Serializable {
     }
 
     public void removeRecipe(Recipe recipe) {
-        System.out.println("removing recipe: "+recipe.toString());
+        System.out.println("removing recipe: " + recipe.toString());
         recipeManager.removeRecipe(recipe);
 
     }
@@ -91,22 +93,27 @@ public class RecipeBean implements Serializable {
     }
 
     public void addRecipe() {
-            Recipe recipe = new Recipe();
-            recipe.setId(recipeInformationBean.getId());
-            System.out.println("Inserting recipe with id = " +recipe.getId());
-            recipe.setEmployee(loggedEmployee);
-            recipe.setClient(recipeInformationBean.getClient());
-            recipe.setMedicines(recipeInformationBean.getMedicines());
+        Recipe recipe = new Recipe();
+        recipe.setId(recipeInformationBean.getId());
+        System.out.println("Inserting recipe with id = " + recipe.getId());
+        recipe.setEmployee(loggedEmployee);
+        recipe.setClient(recipeInformationBean.getClient());
+        recipe.setMedicines(recipeInformationBean.getMedicines());
+
+        for (MedicineOrder order : recipe.getMedicines()
+             ) {
+            order.setRecipe(recipe);
+        }
 
         System.out.println("Employee id = " + recipe.getEmployee().getId());
-            recipe = recipeManager.mergeRecipe(recipe);
-            recipeInformationBean.setId(recipe.getId());
-            addMessage("Recipe updated successfully, to work with other recipe change or clear 'id' field");
+        recipe = recipeManager.mergeRecipe(recipe);
+        recipeInformationBean.setId(recipe.getId());
+        addMessage("Recipe updated successfully, to work with other recipe change or clear 'id' field");
 
     }
 
     public void addMessage(String summary) {
-        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary,null);
+        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary, null);
         FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
@@ -116,6 +123,17 @@ public class RecipeBean implements Serializable {
 
     public void setFilteredRecipes(List<Recipe> filteredRecipes) {
         this.filteredRecipes = filteredRecipes;
+    }
+
+    public void addMedicineOrder() {
+        MedicineOrder medicineOrder = new MedicineOrder();
+        medicineOrder.setMedicine(recipeInformationBean.getSelectedMedicine());
+        medicineOrder.setQuantity(recipeInformationBean.getSelectedQuantity());
+        if (recipeInformationBean.getMedicines() == null) {
+            recipeInformationBean.setMedicines(new ArrayList<MedicineOrder>());
+        }
+        recipeInformationBean.getMedicines().add(medicineOrder);
+
     }
 
 }

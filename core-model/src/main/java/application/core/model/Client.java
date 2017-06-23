@@ -87,8 +87,13 @@ public class Client implements Serializable {
 
     @Override
     public boolean equals(Object obj) {
+        System.out.println("Client equals: ");
         Client that = (Client) obj;
-        return this.id.equals(that.id);
+        System.out.println(that.id + " = " + this.id);
+
+        boolean result = this.id.equals(that.id);
+        System.out.println(result);
+        return result;
     }
 
     public Long getPesel() {
