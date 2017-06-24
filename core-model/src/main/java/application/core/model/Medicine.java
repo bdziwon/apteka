@@ -63,6 +63,15 @@ public class Medicine implements Serializable {
     @Column(name = "quantity")
     private Long quantity = 0L;
 
+    @NotNull(message = "Minimum quantity cannot be empty")
+    @Column(name = "min_quantity")
+    private Long minQuantity = 0L;
+
+    @NotNull(message = "Maximum quantity cannot be empty")
+    @Column(name = "max_quantity")
+    private Long maxQuantity = 0L;
+
+
     public Medicine() {
         super();
     }
@@ -145,10 +154,27 @@ public class Medicine implements Serializable {
         this.quantity = quantity;
     }
 
+    public Long getMinQuantity() {
+        return minQuantity;
+    }
+
+    public void setMinQuantity(Long minQuantity) {
+        this.minQuantity = minQuantity;
+    }
+
+    public Long getMaxQuantity() {
+        return maxQuantity;
+    }
+
+    public void setMaxQuantity(Long maxQuantity) {
+        this.maxQuantity = maxQuantity;
+    }
+
     @Override
     public boolean equals(Object obj) {
         Medicine that = (Medicine) obj;
         return  that.id.equals(this.getId());
     }
 }
+
 

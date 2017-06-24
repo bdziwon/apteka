@@ -36,6 +36,14 @@ public class MedicineInformationBean implements Serializable {
     @NotNull(message = "Quantity cannot be empty")
     private Long quantity;
 
+    @NotNull(message = "Minimum quantity cannot be empty")
+    private Long minQuantity;
+
+
+    @NotNull(message = "Maximum quantity cannot be empty")
+    private Long maxQuantity;
+
+
     public MedicineInformationBean() {
     }
 
@@ -109,5 +117,19 @@ public class MedicineInformationBean implements Serializable {
         this.orders = orders;
     }
 
+    public Long getMinQuantity() {
+        return minQuantity;
+    }
 
+    public void setMinQuantity(Long minQuantity) {
+        this.minQuantity = minQuantity;
+    }
+
+    public Long getMaxQuantity() {
+        return maxQuantity;
+    }
+
+    public void setMaxQuantity(Long maxQuantity) {
+        this.maxQuantity = maxQuantity;
+    }
 }

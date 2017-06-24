@@ -137,12 +137,11 @@ public class RecipeBean implements Serializable {
     }
 
     public void removeMedicineOrder(MedicineOrder medicineOrder) {
+        System.out.println("Removing medicine order with id = "+medicineOrder.getId());
         if (recipeInformationBean.getId() != null) {
             Long newQuantity = medicineOrder.getMedicine().getQuantity() + medicineOrder.getQuantity();
             medicineOrder.getMedicine().setQuantity(newQuantity);
-            System.out.println("removeMedicineOrder: size: before "+recipeInformationBean.getMedicines().size());
             recipeInformationBean.getMedicines().remove(medicineOrder);
-            System.out.println("removeMedicineOrder: size: "+recipeInformationBean.getMedicines().size());
             medicineOrderManager.removeMedicineOrder(medicineOrder);
             addRecipe();
         }
@@ -178,6 +177,7 @@ public class RecipeBean implements Serializable {
                 //update medicine order.
                 Long newQuantity = medicineOrder.getQuantity() + recipeInformationBean.getSelectedQuantity();
                 medicineOrder.setQuantity(newQuantity);
+                medicineOrderManager.mergeMedicineOrder(medicineOrder);
                 addRecipe();
                 return;
             }
@@ -193,12 +193,16 @@ public class RecipeBean implements Serializable {
         MedicineOrder medicineOrder = new MedicineOrder();
         medicineOrder.setMedicine(recipeInformationBean.getSelectedMedicine());
         medicineOrder.setQuantity(recipeInformationBean.getSelectedQuantity());
-        recipeInformationBean.getMedicines().add(medicineOrder);
 
-        //recalculate quantity in database
+        //recalculate quantity of medicine
         selectedMedicine.setQuantity(
                 selectedMedicine.getQuantity() -  recipeInformationBean.getSelectedQuantity()
         );
+
+        medicineOrder = medicineOrderManager.mergeMedicineOrder(medicineOrder);
+        recipeInformationBean.getMedicines().add(medicineOrder);
+
+
 
         addRecipe();
 

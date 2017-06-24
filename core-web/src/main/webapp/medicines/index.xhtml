@@ -43,6 +43,14 @@
                     <h:outputText value="#{medicine.quantity}"/>
                 </p:column>
 
+                <p:column headerText="minQuantity" filterBy = "#{medicine.minQuantity}" filterMatchMode="contains">
+                    <h:outputText value="#{medicine.minQuantity}"/>
+                </p:column>
+
+                <p:column headerText="maxQuantity" filterBy = "#{medicine.maxQuantity}" filterMatchMode="contains">
+                    <h:outputText value="#{medicine.maxQuantity}"/>
+                </p:column>
+
                 <p:column headerText="type" filterBy = "#{medicine.type}" filterMatchMode="contains">
                     <h:outputText value="#{medicine.type}"/>
                 </p:column>

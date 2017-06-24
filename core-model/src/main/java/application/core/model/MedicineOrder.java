@@ -23,7 +23,6 @@ public class MedicineOrder implements Serializable {
     @JoinColumn(name = "id_medicine")
     private Medicine medicine;
 
-    @NotNull
     @ManyToOne
     @JoinColumn(name = "id_recipe")
     private Recipe recipe;

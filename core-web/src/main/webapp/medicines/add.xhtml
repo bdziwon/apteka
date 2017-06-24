@@ -30,13 +30,20 @@
                                         process="@this" update="panel"></p:ajax>
                     </p:inputText>
 
-
                     <p:outputLabel for="price">*Price:</p:outputLabel>
                     <p:inputText id="price" value="#{medicineInformationBean.price}">
                     </p:inputText>
 
                     <p:outputLabel for="quantity">*Quantity:</p:outputLabel>
                     <p:inputText id="quantity" value="#{medicineInformationBean.quantity}">
+                    </p:inputText>
+
+                    <p:outputLabel for="minQuantity">*minQuantity:</p:outputLabel>
+                    <p:inputText id="minQuantity" value="#{medicineInformationBean.minQuantity}">
+                    </p:inputText>
+
+                    <p:outputLabel for="maxQuantity">*maxQuantity:</p:outputLabel>
+                    <p:inputText id="maxQuantity" value="#{medicineInformationBean.maxQuantity}">
                     </p:inputText>
 
                     <p:outputLabel for="description">Description:</p:outputLabel>

@@ -24,11 +24,9 @@ public class ClientConverterBean implements Converter {
 
     @Override
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
-        System.out.println("getAsObject String: " + s);
         try {
             Client client
                     = clientManager.findClient(new Long(s));
-            System.out.println("getAsObject result: " + client.getId());
 
             return client;
         } catch (ClientNotFoundException | NumberFormatException e) {
@@ -42,7 +40,6 @@ public class ClientConverterBean implements Converter {
             return null;
         }
         String result = String.valueOf(((Client) o).getId());
-        System.out.println("getAsString:" + result);
         return result;
     }
 

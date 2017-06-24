@@ -21,11 +21,9 @@ public class MedicineConverterBean implements Converter {
 
     @Override
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
-        System.out.println("getAsObject String: " + s);
         try {
             Medicine medicine
                     = medicineManager.findMedicine(new Long(s));
-            System.out.println("getAsObject result: " + medicine.getId());
 
             return medicine;
         } catch (MedicineNotFoundException | NumberFormatException e) {
@@ -39,7 +37,6 @@ public class MedicineConverterBean implements Converter {
             return null;
         }
         String result = String.valueOf(((Medicine) o).getId());
-        System.out.println("getAsString:" + result);
         return result;
     }
 

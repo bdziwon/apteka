@@ -81,6 +81,8 @@ public class MedicineBean implements Serializable {
         medicineInformationBean.setDescription(medicine.getDescription());
         medicineInformationBean.setPrice(medicine.getPrice());
         medicineInformationBean.setQuantity(medicine.getQuantity());
+        medicineInformationBean.setMinQuantity(medicine.getMinQuantity());
+        medicineInformationBean.setMaxQuantity(medicine.getMaxQuantity());
         medicineInformationBean.setType(medicine.getType());
         medicineInformationBean.setReplacementGroup(medicine.getReplacementGroup());
         medicineInformationBean.setName(medicine.getName());
@@ -94,6 +96,8 @@ public class MedicineBean implements Serializable {
         medicine.setReplacementGroup(medicineInformationBean.getReplacementGroup());
         medicine.setType(medicineInformationBean.getType());
         medicine.setQuantity(medicineInformationBean.getQuantity());
+        medicine.setMinQuantity(medicineInformationBean.getMinQuantity());
+        medicine.setMaxQuantity(medicineInformationBean.getMaxQuantity());
         medicine.setDescription(medicineInformationBean.getDescription());
         medicine.setPrice(medicineInformationBean.getPrice());
         medicine.setName(medicineInformationBean.getName());

@@ -14,6 +14,4 @@ public class MessageBean {
         FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary,null);
         FacesContext.getCurrentInstance().addMessage(null, message);
     }
-
-
 }
