@@ -9,7 +9,9 @@ import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ViewScoped;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
@@ -31,16 +33,20 @@ public class MedicineInformationBean implements Serializable {
     private String description;
 
     @NotNull(message = "Type must be set to 'bought' or 'created'")
+    @Pattern(regexp = "bought|produced", message = "Type must be set to bought or produced")
     private String type;
 
     @NotNull(message = "Quantity cannot be empty")
+    @Min(value = 0, message = "quantity must be greater than or equal to 0")
     private Long quantity;
 
     @NotNull(message = "Minimum quantity cannot be empty")
+    @Min(value = 0, message = "Minimum quantity must be greater than or equal to 0")
     private Long minQuantity;
 
 
     @NotNull(message = "Maximum quantity cannot be empty")
+    @Min(value = 0, message = "Maximum quantity must be greater than or equal to 0")
     private Long maxQuantity;
 
 

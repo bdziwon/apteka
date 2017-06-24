@@ -44,6 +44,4 @@ public class NavigationBean implements Serializable {
             e.printStackTrace();
         }
     }
-
-
 }

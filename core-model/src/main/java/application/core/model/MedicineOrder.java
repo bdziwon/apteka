@@ -1,6 +1,7 @@
 package application.core.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
@@ -14,6 +15,7 @@ public class MedicineOrder implements Serializable {
     @Column(name = "id")
     private Long id;
 
+    @Min(0)
     @NotNull
     @Column(name = "quantity")
     private Long quantity = 0L;

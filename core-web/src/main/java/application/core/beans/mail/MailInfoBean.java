@@ -20,8 +20,8 @@ public class MailInfoBean implements Serializable {
 
 
     @NotNull
-
     private String text;
+
 
     public MailInfoBean(){
 

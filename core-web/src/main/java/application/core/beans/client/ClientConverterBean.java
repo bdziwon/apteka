@@ -11,10 +11,6 @@ import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 
-/**
- * Created by Bartek on 20.06.2017.
- */
-
 @FacesConverter(value = "clientConverter")
 @ManagedBean(name = "clientConverterBean")
 public class ClientConverterBean implements Converter {

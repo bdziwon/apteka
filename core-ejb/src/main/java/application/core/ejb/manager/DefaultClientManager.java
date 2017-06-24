@@ -11,9 +11,7 @@ import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 @Stateless
-/**
- * Created by Hubert on 2017-05-28.
- */
+
 public class DefaultClientManager implements ClientManager {
     @EJB
     private ClientDAO clientDAO;

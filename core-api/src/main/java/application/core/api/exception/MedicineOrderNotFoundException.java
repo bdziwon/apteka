@@ -1,8 +1,5 @@
 package application.core.api.exception;
 
-/**
- * Created by Hubert on 2017-05-28.
- */
 public class MedicineOrderNotFoundException extends Exception {
     private static final long serialVersionUID = 1L;
 
@@ -25,5 +22,4 @@ public class MedicineOrderNotFoundException extends Exception {
         super(arg0, arg1, arg2, arg3);
     }
 
-    ;
 }

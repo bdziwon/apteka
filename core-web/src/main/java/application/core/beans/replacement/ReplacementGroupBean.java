@@ -64,7 +64,7 @@ public class ReplacementGroupBean implements Serializable {
 
         replacementGroup = replacementGroupManager.mergeReplacementGroup(replacementGroup);
         replacementGroupInformationBean.setId(replacementGroup.getId());
-        messageBean.addMessage("ReplacementGroup updated successfully, to work with other user change 'name' field");
+        messageBean.addMessage("ReplacementGroup updated successfully, to work with other replacement change 'id' field");
 
     }
 

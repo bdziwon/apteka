@@ -2,7 +2,9 @@ package application.core.model;
 
 import javax.persistence.*;
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
@@ -57,18 +59,23 @@ public class Medicine implements Serializable {
 
     @NotNull(message = "Type cannot be empty")
     @Column(name = "type")
+    @Pattern(regexp = "bought|produced", message = "Error: Unsupported type value")
     private String type = "bought";
 
     @NotNull(message = "Quantity cannot be empty")
     @Column(name = "quantity")
+    @Min(value = 0, message = "Quantity must be greater than or equal to 0")
     private Long quantity = 0L;
 
     @NotNull(message = "Minimum quantity cannot be empty")
     @Column(name = "min_quantity")
+    @Min(value = 0, message = "Minimum quantity must be greater than or equal to 0")
     private Long minQuantity = 0L;
 
     @NotNull(message = "Maximum quantity cannot be empty")
     @Column(name = "max_quantity")
+    @Min(value = 0, message = "Maxiumum quantity must be greater than or equal to 0")
+
     private Long maxQuantity = 0L;
 
 

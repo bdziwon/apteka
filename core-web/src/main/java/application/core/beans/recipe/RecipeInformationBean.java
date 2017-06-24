@@ -10,6 +10,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ViewScoped;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
@@ -34,6 +35,7 @@ public class RecipeInformationBean implements Serializable {
     private Medicine selectedMedicine;
 
     @NotNull(message = "Fill quantity field.")
+    @Min(value = 1, message = "quantity must be greater than or equal to 1")
     private Long selectedQuantity;
 
     public RecipeInformationBean() {

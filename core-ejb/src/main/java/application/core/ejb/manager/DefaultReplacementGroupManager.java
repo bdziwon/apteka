@@ -12,9 +12,7 @@ import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 @Stateless
-/**
- * Created by Hubert on 2017-05-28.
- */
+
 public class DefaultReplacementGroupManager implements ReplacementGroupManager {
     @EJB
     private ReplacementGroupDAO replacementGroupDAO;

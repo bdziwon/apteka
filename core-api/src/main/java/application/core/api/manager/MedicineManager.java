@@ -9,9 +9,6 @@ import application.core.model.Medicine;
 
 import javax.ejb.Remote;
 
-/**
- * Created by Hubert on 2017-05-28.
- */
 @Remote
 public interface MedicineManager {
     List<Medicine> findAllMedicines();

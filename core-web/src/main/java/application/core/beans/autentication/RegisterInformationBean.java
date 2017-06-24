@@ -7,10 +7,6 @@ import javax.faces.bean.RequestScoped;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-/**
- * Created by Bartek on 18.06.2017.
- */
-
 @ManagedBean(name = "registerInformationBean")
 @RequestScoped
 

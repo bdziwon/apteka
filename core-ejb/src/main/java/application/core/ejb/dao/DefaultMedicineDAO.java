@@ -10,9 +10,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 
-/**
- * Created by Hubert on 2017-05-28.
- */
 @Stateless
 public class DefaultMedicineDAO implements MedicineDAO {
 

@@ -8,9 +8,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-/**
- * Created by Hubert on 2017-05-28.
- */
+
 @Stateless
 public class DefaultClientDAO implements ClientDAO {
     @PersistenceContext

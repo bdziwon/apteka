@@ -81,7 +81,7 @@ public class ClientBean implements Serializable{
 
         client = clientManager.mergeClient(client);
         clientInformationBean.setId(client.getId());
-        messageBean.addMessage("ReplacementGroup updated successfully, to work with other user change 'name' field");
+        messageBean.addMessage("Client updated successfully, to work with other client change 'id' field");
 
     }
 

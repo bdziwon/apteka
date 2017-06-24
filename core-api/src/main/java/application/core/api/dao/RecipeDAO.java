@@ -8,9 +8,7 @@ import java.util.List;
 
 import javax.ejb.Local;
 @Local
-/**
- * Created by Hubert on 2017-05-28.
- */
+
 public interface RecipeDAO {
     void removeRecipe(Recipe recipe);
 

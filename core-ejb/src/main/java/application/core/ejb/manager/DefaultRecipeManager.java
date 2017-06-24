@@ -13,9 +13,7 @@ package application.core.ejb.manager;
         import javax.ejb.EJB;
         import javax.ejb.Stateless;
 @Stateless
-/**
- * Created by Hubert on 2017-05-28.
- */
+
 public class DefaultRecipeManager implements RecipeManager {
     @EJB
     private RecipeDAO recipeDao;

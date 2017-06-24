@@ -109,7 +109,7 @@ public class MedicineBean implements Serializable {
 
         medicine = medicineManager.mergeMedicine(medicine);
         medicineInformationBean.setId(medicine.getId());
-        messageBean.addMessage("Medicine updated successfully, to work with other user change 'name' field");
+        messageBean.addMessage("Medicine updated successfully, to work with other medicine change 'name' field");
 
     }
 

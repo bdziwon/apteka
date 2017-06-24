@@ -12,9 +12,6 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 @Stateless
 
-/**
- * Created by Hubert on 2017-05-28.
- */
 public class DefaultMedicineOrderManager implements MedicineOrderManager {
     @EJB
     private MedicineOrderDAO medicineOrderDAO;

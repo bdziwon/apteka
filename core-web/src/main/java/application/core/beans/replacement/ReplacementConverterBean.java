@@ -16,9 +16,6 @@ import javax.faces.convert.FacesConverter;
 import java.math.BigInteger;
 import java.util.Locale;
 
-/**
- * Created by Bartek on 20.06.2017.
- */
 
 @FacesConverter(value = "replacementConverter")
 @ManagedBean(name = "replacementConverterBean")

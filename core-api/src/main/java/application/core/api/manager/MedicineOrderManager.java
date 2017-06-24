@@ -7,9 +7,6 @@ import java.util.List;
 
 import javax.ejb.Remote;
 
-/**
- * Created by Hubert on 2017-05-28.
- */
 @Remote
 public interface MedicineOrderManager {
     List<MedicineOrder> findallMedicineOrders();

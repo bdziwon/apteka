@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Leki</title>
+    </h:head>
+    <h:body>
+        #{employeeBean.initialize()}
+
+        <h3>PHARMACY: MAGAZINE ORDER </h3>
+
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:commandButton value="Back" id="index" icon="ui-icon-arrow-1-w"
+                             actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary"
+                             process="@this"/>
+        </h:panelGrid>
+
+        <h:form id="magazineOrderForm">
+            <p:dataTable widgetVar="magazineOrderTable" id="magazineOrderList" var="magazineOrder"
+                         value="#{magazineOrderBean.magazineOrders}">
+                <p:column headerText="medicineName">
+                    <h:outputText value="#{magazineOrder.medicineName}"/>
+                </p:column>
+
+                <p:column headerText="quantity">
+                    <h:outputText value="#{magazineOrder.quantity}"/>
+                </p:column>
+
+                <p:column headerText="delete">
+                    <p:commandButton icon="ui-icon-trash"
+                                     title="Delete this magazineOrder"
+                                     actionListener="#{magazineOrderBean.magazineOrders.remove(magazineOrder)}"
+                                     ajax="false"/>
+                </p:column>
+
+            </p:dataTable>
+            <h4>Export Magazine Orders</h4>
+            <h:commandLink>
+                <p:graphicImage url="images/pdf.png" height="50px" width="50px"/>
+                <p:dataExporter type="pdf" target="magazineOrderList" fileName="Orders" pageOnly="true"/>
+            </h:commandLink>
+        </h:form>
+    </h:body>
+</f:view>
+</html>

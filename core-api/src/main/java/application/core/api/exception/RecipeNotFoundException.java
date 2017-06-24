@@ -1,8 +1,5 @@
 package application.core.api.exception;
 
-/**
- * Created by Hubert on 2017-05-28.
- */
 public class RecipeNotFoundException extends Exception {
     private static final long serialVersionUID = 1L;
 
