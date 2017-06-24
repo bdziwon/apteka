@@ -53,14 +53,6 @@ public class Client implements Serializable {
         this.id = id;
     }
 
-    public List<Recipe> getRecipes() {
-        return recipes;
-    }
-
-    public void setRecipes(List<Recipe> recipes) {
-        this.recipes = recipes;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -88,6 +80,9 @@ public class Client implements Serializable {
     @Override
     public boolean equals(Object obj) {
         System.out.println("Client equals: ");
+        if (obj.getClass() != this.getClass()) {
+            return false;
+        }
         Client that = (Client) obj;
         System.out.println(that.id + " = " + this.id);
 
@@ -102,5 +97,13 @@ public class Client implements Serializable {
 
     public void setPesel(Long pesel) {
         this.pesel = pesel;
+    }
+
+    public List<Recipe> getRecipes() {
+        return recipes;
+    }
+
+    public void setRecipes(List<Recipe> recipes) {
+        this.recipes = recipes;
     }
 }

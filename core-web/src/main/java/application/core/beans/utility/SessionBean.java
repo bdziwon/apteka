@@ -74,7 +74,6 @@ public class SessionBean implements Serializable {
 
         if (matchedEmployees.isEmpty()) {
             messageBean.addMessage("User does not exist");
-            //TODO: user not found, login failed
         } else {
             //validation successful
             employee = matchedEmployees.get(0);

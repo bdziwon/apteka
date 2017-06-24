@@ -18,20 +18,18 @@ import java.util.List;
 @RequestScoped
 public class MagazineOrderBean implements Serializable {
 
-    @EJB(beanInterface = MedicineManager.class)
-    private MedicineManager medicineManager;
-
     @ManagedProperty(value = "#{messageBean}")
     MessageBean messageBean;
-
     List<MagazineOrder> magazineOrders = new ArrayList<MagazineOrder>();
+    @EJB(beanInterface = MedicineManager.class)
+    private MedicineManager medicineManager;
 
     @PostConstruct
     public void init() {
         List<Medicine> medicines = medicineManager.findAllMedicines();
         for (Medicine medicine : medicines) {
             if (!medicine.getType().equals("bought")) {
-                //ignore bought medicines
+                //ignore produced medicines
                 continue;
             }
             if (medicine.getQuantity() < medicine.getMinQuantity()) {

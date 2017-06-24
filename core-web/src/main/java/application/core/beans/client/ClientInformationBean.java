@@ -1,16 +1,9 @@
 package application.core.beans.client
         ;
 
-import application.core.model.MedicineOrder;
-import application.core.model.ReplacementGroup;
-import org.hibernate.validator.constraints.Length;
-
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.List;
 
 @ManagedBean(name = "clientInformationBean")
 @RequestScoped
@@ -24,7 +17,7 @@ public class ClientInformationBean implements Serializable {
 
     private String lastname;
 
-    private  String phoneNumber;
+    private String phoneNumber;
 
 
     public ClientInformationBean() {

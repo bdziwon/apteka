@@ -6,10 +6,10 @@ import application.core.api.exception.ClientNotFoundException;
 import application.core.api.manager.ClientManager;
 import application.core.model.Client;
 
-import java.util.List;
-
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.List;
+
 @Stateless
 
 public class DefaultClientManager implements ClientManager {

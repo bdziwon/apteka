@@ -1,57 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e820481d-44fc-4579-bbab-869eb0abd0d1" name="Default" comment="dodanie wczytywanie testowych danych pod /test.xhtml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-web/src/main/webapp/magazine/images/pdf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-web/src/main/webapp/magazine/order.xhtml" />
+    <list default="true" id="e820481d-44fc-4579-bbab-869eb0abd0d1" name="Default" comment="Validatory ujemnych liczb&#10;wyświetlanie leków i ich ilości do zamówienia w tabeli">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT.ear" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT.ear" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-ejb-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-ejb-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-web-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-model-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-model-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-model/target/classes/application/core/model/Medicine.class" afterPath="$PROJECT_DIR$/core-model/target/classes/application/core/model/Medicine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-model/target/classes/application/core/model/MedicineOrder.class" afterPath="$PROJECT_DIR$/core-model/target/classes/application/core/model/MedicineOrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-model-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-model-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/RecipeDAO.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/RecipeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ReplacementGroupDAO.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ReplacementGroupDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ClientNotFoundException.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ClientNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineNotFoundException.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineOrderNotFoundException.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineOrderNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/RecipeNotFoundException.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/RecipeNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ReplacementGroupNotFoundException.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ReplacementGroupNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ClientManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ClientManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ClientDAO.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ClientDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/EmployeeDAO.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/EmployeeDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/EmployeeNotFoundException.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/EmployeeNotFoundException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/EmployeeManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/EmployeeManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineOrderManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineOrderManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/RecipeManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/RecipeManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ReplacementGroupManager.java" afterPath="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ReplacementGroupManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultClientDAO.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultClientDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultEmployeeDAO.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultEmployeeDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultClientManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultClientManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultEmployeeManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultEmployeeManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineOrderManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineOrderManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultReplacementGroupManager.java" afterPath="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultReplacementGroupManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java" afterPath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java" afterPath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java" afterPath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java" afterPath="$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/core-web.iml" afterPath="$PROJECT_DIR$/core-web/core-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/RegisterInformationBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/RegisterInformationBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/annotations/LoggedIn.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/annotations/LoggedIn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementConverterBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementConverterBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml" afterPath="$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/index.xhtml" afterPath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/index.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java" afterPath="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java" />
     </list>
     <ignored path="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/" />
     <ignored path="$PROJECT_DIR$/core-ear/target/maven-archiver/" />
@@ -104,122 +94,112 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="apteka@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="medicine" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MailBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java">
+      <file leaf-file-name="MailManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailInfoBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java">
+      <file leaf-file-name="MagazineOrderBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MagazineOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="110">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#696#711#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicineBean.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java">
+      <file leaf-file-name="TestBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
+            <state relative-caret-position="256">
+              <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedicineNotFoundException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineNotFoundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicineConverterBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipeInformationBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MedicineInformationBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplacementConverterBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementConverterBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplacementGroupBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplacementGroupInformationBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupInformationBean.java">
+      <file leaf-file-name="MedicineOrder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedicineOrderDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedicineDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Medicine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-891">
+              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -240,8 +220,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filtre</find>
-      <find>updateInform</find>
       <find>pesel</find>
       <find>recipe</find>
       <find>addRecip</find>
@@ -270,6 +248,8 @@
       <find>medicine</find>
       <find>Created</find>
       <find>Crea</find>
+      <find>filtredClients</find>
+      <find>boug</find>
     </findStrings>
     <replaceStrings>
       <replace>employeeBeanAlternative</replace>
@@ -297,57 +277,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/ReplacementGroup.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementInformationBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupInformationBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/MedicineBean.java" />
-        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/RecipeManager.java" />
-        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java" />
-        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/RecipeDAO.java" />
-        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/register.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/replacements/add.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/login.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/ClientList.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/replacements/index.xhtml" />
-        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java" />
-        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java" />
-        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml" />
-        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/client/add.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml" />
-        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Recipe.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/test.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/medicines/add.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/magazine/order.xhtml" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java" />
         <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java" />
-        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java" />
-        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ClientDAO.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultClientDAO.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultClientManager.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultEmployeeDAO.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultEmployeeManager.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineOrderManager.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java" />
+        <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/EmployeeDAO.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/EmployeeManager.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/EmployeeNotFoundException.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/annotations/LoggedIn.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java" />
+        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java" />
+        <option value="$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java" />
       </list>
     </option>
   </component>
@@ -679,32 +659,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -743,7 +697,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
+              <option name="myItemId" value="annotations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -761,293 +715,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="replacement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medicine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magazineOrder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autentication" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1075,58 +743,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="core-ejb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1163,23 +779,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-ejb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejb" />
+              <option name="myItemId" value="core-ear" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1193,7 +793,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-ejb" />
+              <option name="myItemId" value="core-ear" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1205,15 +805,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ejb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1222,7 +818,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Android Logcat" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -1231,7 +827,7 @@
     <property name="project.structure.proportion" value="0.15478119" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/core-web/src/main/java/application/core" />
-    <property name="SearchEverywhereHistoryKey" value="Recipe&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeInformationBean&#10;MedicineInf&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java&#10;MedicineOr&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/MedicineOrder.java&#10;Medicine&#9;PSI&#9;JAVA://application.core.model.Medicine&#10;Maven p&#9;ACTION&#9;Maven.Reimport&#10;MedicineOrder&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/MedicineOrder.java&#10;getAsS&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineConverterBean#getAsString&#10;getAs&#9;PSI&#9;JAVA://application.core.beans.client.ClientConverterBean#getAsString&#10;test&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/test.xhtml&#10;MedicineBean&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;setq&#9;PSI&#9;JAVA://application.core.model.Medicine#setMaxQuantity&#10;setQuan&#9;PSI&#9;JAVA://application.core.model.Medicine#setQuantity&#10;addMessage&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#addMessage&#10;addMessag&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#addMessage&#10;Message&#9;PSI&#9;JAVA://application.core.beans.client.ClientBean#addMessage&#10;Information&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java&#10;medi&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/MedicineOrder.java&#10;Rec&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Defa&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java&#10;RecipeIN&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeInformationBean&#10;RecipeB&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeBean&#10;DefaultMe&#9;PSI&#9;JAVA://application.core.ejb.dao.DefaultMedcineOrderDAO&#10;Client&#9;PSI&#9;JAVA://application.core.model.Client&#10;removeMedici&#9;PSI&#9;JAVA://application.core.api.manager.MedicineOrderManager#removeMedicineOrder&#10;index&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/client/index.xhtml&#10;MedicineOrderD&#9;FILE&#9;file://E:/apteka_git/apteka/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java&#10;Emplo&#9;PSI&#9;JAVA://application.core.model.Employee&#10;MEdici&#9;FILE&#9;dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine&#10;recipe&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;medicineDao&#9;PSI&#9;JAVA://application.core.ejb.dao.DefaultMedicineDAO&#10;medicineMana&#9;PSI&#9;JAVA://application.core.ejb.manager.DefaultMedicineManager&#10;addMedicine&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeBean#addMedicineOrder&#10;emp&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean&#10;s&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/utility/SessionBean.java&#10;log&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/login.xhtml&#10;Empl&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Employee.java&#10;Def&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java&#10;Reci&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Na&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/utility/NavigationBean.java&#10;Medici&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;MedicineB&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;.jar&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/lib/javax.persistence.jar&#10;redirectFromTop&#9;PSI&#9;JAVA://application.core.beans.utility.NavigationBean#redirectFromTop&#10;redirectTo&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#redirectToAddMedicine&#10;redirectTO&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#redirectToIndex&#10;redirec&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToMedicines&#10;redirect&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToLogin&#10;redire&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#redirectToIndex&#10;addMessa&#9;PSI&#9;JAVA://application.core.beans.SessionBean#addMessage&#10;Replace&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/ReplacementGroup.java" />
+    <property name="SearchEverywhereHistoryKey" value="test&#9;PSI&#9;JAVA://application.core.beans.utility.TestBean&#10;MAgazi&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java&#10;MedicineOrder&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/MedicineOrder.java&#10;Recipe&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeInformationBean&#10;MedicineInf&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java&#10;MedicineOr&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/MedicineOrder.java&#10;Medicine&#9;PSI&#9;JAVA://application.core.model.Medicine&#10;Maven p&#9;ACTION&#9;Maven.Reimport&#10;getAsS&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineConverterBean#getAsString&#10;getAs&#9;PSI&#9;JAVA://application.core.beans.client.ClientConverterBean#getAsString&#10;MedicineBean&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;setq&#9;PSI&#9;JAVA://application.core.model.Medicine#setMaxQuantity&#10;setQuan&#9;PSI&#9;JAVA://application.core.model.Medicine#setQuantity&#10;addMessage&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#addMessage&#10;addMessag&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#addMessage&#10;Message&#9;PSI&#9;JAVA://application.core.beans.client.ClientBean#addMessage&#10;Information&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java&#10;medi&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/MedicineOrder.java&#10;Rec&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Defa&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java&#10;RecipeIN&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeInformationBean&#10;RecipeB&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeBean&#10;DefaultMe&#9;PSI&#9;JAVA://application.core.ejb.dao.DefaultMedcineOrderDAO&#10;Client&#9;PSI&#9;JAVA://application.core.model.Client&#10;removeMedici&#9;PSI&#9;JAVA://application.core.api.manager.MedicineOrderManager#removeMedicineOrder&#10;index&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/client/index.xhtml&#10;MedicineOrderD&#9;FILE&#9;file://E:/apteka_git/apteka/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java&#10;Emplo&#9;PSI&#9;JAVA://application.core.model.Employee&#10;MEdici&#9;FILE&#9;dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine&#10;recipe&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;medicineDao&#9;PSI&#9;JAVA://application.core.ejb.dao.DefaultMedicineDAO&#10;medicineMana&#9;PSI&#9;JAVA://application.core.ejb.manager.DefaultMedicineManager&#10;addMedicine&#9;PSI&#9;JAVA://application.core.beans.recipe.RecipeBean#addMedicineOrder&#10;emp&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean&#10;s&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/utility/SessionBean.java&#10;log&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/webapp/login.xhtml&#10;Empl&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Employee.java&#10;Def&#9;FILE&#9;file://E:/apteka_git/apteka/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java&#10;Reci&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/src/main/java/application/core/model/Recipe.java&#10;Na&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/utility/NavigationBean.java&#10;Medici&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;MedicineB&#9;FILE&#9;file://E:/apteka_git/apteka/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java&#10;.jar&#9;FILE&#9;file://E:/apteka_git/apteka/core-model/lib/javax.persistence.jar&#10;redirectFromTop&#9;PSI&#9;JAVA://application.core.beans.utility.NavigationBean#redirectFromTop&#10;redirectTo&#9;PSI&#9;JAVA://application.core.beans.medicine.MedicineBean#redirectToAddMedicine&#10;redirectTO&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#redirectToIndex&#10;redirec&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToMedicines&#10;redirect&#9;PSI&#9;JAVA://application.core.beans.EmployeeBean#redirectToLogin&#10;redire&#9;PSI&#9;JAVA://application.core.beans.utility.SessionBean#redirectToIndex&#10;addMessa&#9;PSI&#9;JAVA://application.core.beans.SessionBean#addMessage" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -1801,7 +1397,7 @@
       <workItem from="1498147788054" duration="10570000" />
       <workItem from="1498206047364" duration="1197000" />
       <workItem from="1498212197948" duration="19313000" />
-      <workItem from="1498294220230" duration="8410000" />
+      <workItem from="1498294220230" duration="10962000" />
     </task>
     <task id="LOCAL-00001" summary="Dodano index.xhtml jako stronę startową">
       <created>1497871212932</created>
@@ -1936,11 +1532,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498297788454</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Validatory ujemnych liczb&#10;wyświetlanie leków i ich ilości do zamówienia w tabeli">
+      <created>1498302728095</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1498302728095</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164244000" />
+    <option name="totallyTimeSpent" value="166796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1957,7 +1560,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802126" sideWeight="0.5141388" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802126" sideWeight="0.5192802" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12724936" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1970,14 +1573,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.4922879" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.49485862" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.48971722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.4974293" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802126" sideWeight="0.48586118" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31341302" sideWeight="0.48136246" order="2" side_tool="false" content_ui="tabs" x="22" y="154" width="1556" height="312" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802126" sideWeight="0.4807198" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31341302" sideWeight="0.47622108" order="2" side_tool="false" content_ui="tabs" x="22" y="154" width="1556" height="312" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25899744" sideWeight="0.5069307" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28277636" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
@@ -2040,7 +1643,8 @@
     <MESSAGE value="Obliczanie leków w magazynie" />
     <MESSAGE value="Poprawienie usuwania leków z recepty;&#10;Dodano minimum i maksimum danego leku w magazynie" />
     <MESSAGE value="dodanie wczytywanie testowych danych pod /test.xhtml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie wczytywanie testowych danych pod /test.xhtml&#10;" />
+    <MESSAGE value="Validatory ujemnych liczb&#10;wyświetlanie leków i ich ilości do zamówienia w tabeli" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validatory ujemnych liczb&#10;wyświetlanie leków i ich ilości do zamówienia w tabeli" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2053,364 +1657,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_131/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineOrderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="242" column="41" lean-forward="false" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
-          <folding>
-            <element signature="e#7722#7723#0" expanded="false" />
-            <element signature="e#7781#7782#0" expanded="false" />
-            <element signature="e#7827#7828#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#732#733#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#819#820#0" expanded="false" />
-            <element signature="e#850#851#0" expanded="false" />
-            <element signature="e#877#878#0" expanded="false" />
-            <element signature="e#917#918#0" expanded="false" />
-            <element signature="e#949#950#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-            <element signature="e#1015#1016#0" expanded="false" />
-            <element signature="e#1063#1064#0" expanded="false" />
-            <element signature="e#1103#1104#0" expanded="false" />
-            <element signature="e#1141#1142#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-            <element signature="e#1229#1230#0" expanded="false" />
-            <element signature="e#1275#1276#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1333#1334#0" expanded="false" />
-            <element signature="e#1373#1374#0" expanded="false" />
-            <element signature="e#1407#1408#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/ClientList.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/add.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/test.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="57" column="47" lean-forward="false" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <marker date="1498295328932" expanded="true" signature="211:3912" ph="..." />
-            <marker date="1498295328932" expanded="true" signature="404:3904" ph="..." />
-            <marker date="1498295328932" expanded="true" signature="472:3894" ph="..." />
-            <marker date="1498295328932" expanded="true" signature="1008:3876" ph="..." />
-            <marker date="1498295328932" expanded="true" signature="1182:3570" ph="..." />
-            <marker date="1498295328932" expanded="true" signature="2454:2550" ph="..." />
-            <marker date="1498295328932" expanded="true" signature="2667:2763" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/75fd13a2/9c7c2245-89fc-45c3-8c85-6f413f9e6794/apteka.medicine_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/client/add.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/add.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/replacements/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/magazine/order.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/RegisterInformationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="130" column="20" lean-forward="false" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="231" column="20" lean-forward="false" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -2431,53 +1681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#791#806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2517,23 +1724,241 @@
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java">
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="163">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#2159#2160#0" expanded="true" />
+            <element signature="e#2189#2190#0" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+          <folding>
+            <element signature="e#2797#2798#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#3369#3370#0" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
+            <element signature="e#3464#3465#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="true" />
+            <element signature="e#3603#3604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java">
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ClientDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ClientManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ClientNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultClientDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultClientManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultEmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultEmployeeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineOrderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/EmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/EmployeeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/EmployeeNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/annotations/LoggedIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2541,27 +1966,130 @@
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java">
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="544">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891">
+          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#696#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

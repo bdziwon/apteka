@@ -6,14 +6,10 @@ import application.core.beans.utility.NavigationBean;
 import application.core.model.Employee;
 import application.core.session.SessionUtils;
 
-import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
-import javax.faces.context.ExternalContext;
-import javax.faces.context.FacesContext;
-import java.io.IOException;
 import java.io.Serializable;
 
 
@@ -21,10 +17,16 @@ import java.io.Serializable;
 @RequestScoped
 public class EmployeeBean implements Serializable {
 
+    private final boolean REQUIRE_LOGIN = true;
     @EJB(beanInterface = EmployeeManager.class)
     private EmployeeManager employeeManager;
+    //inject navigation bean
+    @ManagedProperty(value = "#{navigationBean}")
+    private NavigationBean navigationBean;
+    private Employee employee = SessionUtils.getEmployee();
 
-    private final boolean REQUIRE_LOGIN = true;
+    public EmployeeBean() {
+    }
 
     public NavigationBean getNavigationBean() {
         return navigationBean;
@@ -32,15 +34,6 @@ public class EmployeeBean implements Serializable {
 
     public void setNavigationBean(NavigationBean navigationBean) {
         this.navigationBean = navigationBean;
-    }
-
-    //inject navigation bean
-    @ManagedProperty(value="#{navigationBean}")
-    private NavigationBean navigationBean;
-
-    private Employee employee = SessionUtils.getEmployee();
-
-    public EmployeeBean() {
     }
 
     public void initialize() {
@@ -60,7 +53,6 @@ public class EmployeeBean implements Serializable {
     }
 
     /**
-
      * checks if session is logged
      *
      * @return true if logged, false if not

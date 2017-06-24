@@ -21,10 +21,7 @@ public class ClientConverterBean implements Converter {
     @Override
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
         try {
-            Client client
-                    = clientManager.findClient(new Long(s));
-
-            return client;
+            return clientManager.findClient(new Long(s));
         } catch (ClientNotFoundException | NumberFormatException e) {
             return null;
         }
@@ -35,8 +32,7 @@ public class ClientConverterBean implements Converter {
         if (o == null) {
             return null;
         }
-        String result = String.valueOf(((Client) o).getId());
-        return result;
+        return String.valueOf(((Client) o).getId());
     }
 
     public ClientManager getClientManager() {

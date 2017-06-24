@@ -2,8 +2,8 @@ package application.core.beans.magazineOrder;
 
 public class MagazineOrder {
 
-    private String  medicineName;
-    private Long    quantity;
+    private String medicineName;
+    private Long quantity;
 
     public String getMedicineName() {
         return medicineName;

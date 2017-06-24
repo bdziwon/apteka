@@ -1,57 +1,43 @@
 package application.core.beans.client;
 
 
-import application.core.annotations.LoggedIn;
 import application.core.api.exception.ClientNotFoundException;
 import application.core.api.manager.ClientManager;
-import application.core.api.manager.MedicineManager;
 import application.core.beans.utility.MessageBean;
-import application.core.model.Employee;
 import application.core.model.Client;
-import application.core.model.Recipe;
 
 import javax.ejb.EJB;
-import javax.ejb.SessionBean;
-import javax.ejb.Stateless;
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
-import javax.faces.context.ExternalContext;
-import javax.faces.context.FacesContext;
-import javax.inject.Inject;
-import javax.inject.Named;
-import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 
 @ManagedBean(name = "clientBean")
 @RequestScoped
-public class ClientBean implements Serializable{
+public class ClientBean implements Serializable {
+
     @EJB(beanInterface = ClientManager.class)
     private ClientManager clientManager;
 
-
-    @ManagedProperty(value="#{clientInformationBean}")
-    ClientInformationBean clientInformationBean;
+    @ManagedProperty(value = "#{clientInformationBean}")
+    private ClientInformationBean clientInformationBean;
 
     @ManagedProperty(value = "#{messageBean}")
-    MessageBean messageBean;
+    private MessageBean messageBean;
 
     private List<Client> filtredClients;
 
-    public ClientBean(){
-
+    public ClientBean() {
     }
-    public void updateInformationBean() {
-        Client client = null;
 
+    public void updateInformationBean() {
+        Client client;
         try {
             client = clientManager
                     .findClient(clientInformationBean.getId());
-        } catch (ClientNotFoundException e  ) {
+        } catch (ClientNotFoundException e) {
             //do not update any form fields, replacementGroup with given name not found
             clientInformationBean.setId(null);
             System.out.println("updateInformationBean:ReplacementGroupNotFoundException");
@@ -73,7 +59,7 @@ public class ClientBean implements Serializable{
     public void addClient() {
         Client client = new Client();
         client.setId(clientInformationBean.getId());
-        System.out.println("Inserting client with id = " +client.getId());
+        System.out.println("Inserting client with id = " + client.getId());
         client.setFirstName(clientInformationBean.getName());
         client.setLastName(clientInformationBean.getLastName());
         client.setPhoneNumber(clientInformationBean.getPhoneNumber());
@@ -89,15 +75,10 @@ public class ClientBean implements Serializable{
         return filtredClients;
     }
 
-    public void setFilteredReplacementGroups(List<Client> filtredClients) {
-        this.filtredClients = filtredClients;
-    }
-
     public void removeClient(Client client) {
         clientManager.removeClient(client);
 
     }
-
 
     public ClientManager getClientManager() {
         return clientManager;
@@ -130,6 +111,7 @@ public class ClientBean implements Serializable{
     public void setMessageBean(MessageBean messageBean) {
         this.messageBean = messageBean;
     }
+
 
 
 }

@@ -16,8 +16,7 @@ import java.util.List;
 @ManagedBean(name = "medicineBean")
 @RequestScoped
 public class MedicineBean implements Serializable {
-    @EJB(beanInterface = MedicineManager.class)
-    private MedicineManager medicineManager;
+    public List<Medicine> filteredMedicines;
 
     //inject medicine information for adding and editing purposes
     @ManagedProperty(value = "#{medicineInformationBean}")
@@ -25,8 +24,13 @@ public class MedicineBean implements Serializable {
 
     @ManagedProperty(value = "#{messageBean}")
     MessageBean messageBean;
+    @EJB(beanInterface = MedicineManager.class)
+    private MedicineManager medicineManager;
 
-    public List<Medicine> filteredMedicines;
+    public MedicineBean() {
+
+
+    }
 
     public MedicineManager getMedicineManager() {
         return medicineManager;
@@ -42,11 +46,6 @@ public class MedicineBean implements Serializable {
 
     public void setMedicineInformationBean(MedicineInformationBean medicineInformationBean) {
         this.medicineInformationBean = medicineInformationBean;
-    }
-
-    public MedicineBean() {
-
-
     }
 
     public List<Medicine> getMedicines() {

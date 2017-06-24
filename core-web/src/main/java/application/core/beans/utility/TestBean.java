@@ -45,6 +45,8 @@ public class TestBean {
         medicine.setName("apap");
         medicine.setDescription("for headache");
         medicine.setQuantity(20L);
+        medicine.setMinQuantity(10L);
+        medicine.setMaxQuantity(20L);
         medicine.setType("bought");
         medicine.setPrice(new BigDecimal(50));
 
@@ -52,6 +54,8 @@ public class TestBean {
         medicine2.setName("ibuprom");
         medicine2.setDescription("for headache");
         medicine2.setQuantity(30L);
+        medicine2.setMinQuantity(15L);
+        medicine2.setMaxQuantity(30L);
         medicine2.setType("bought");
         medicine2.setPrice(new BigDecimal(30));
 

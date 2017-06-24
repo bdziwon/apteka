@@ -6,10 +6,10 @@ import application.core.api.exception.MedicineNotFoundException;
 import application.core.api.manager.MedicineManager;
 import application.core.model.Medicine;
 
-import java.util.List;
-
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.List;
+
 @Stateless
 
 public class DefaultMedicineManager implements MedicineManager {
@@ -42,7 +42,7 @@ public class DefaultMedicineManager implements MedicineManager {
 
     @Override
     public Medicine findMedicine(Long id) throws MedicineNotFoundException {
-        Medicine medicine= medicineDAO.findMedicine(id);
+        Medicine medicine = medicineDAO.findMedicine(id);
         if (medicine == null)
             throw new MedicineNotFoundException();
         return medicine;

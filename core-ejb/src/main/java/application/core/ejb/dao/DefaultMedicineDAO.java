@@ -1,14 +1,13 @@
 package application.core.ejb.dao;
+
 import application.core.api.dao.MedicineDAO;
 import application.core.model.Medicine;
-
-import java.util.List;
-
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 
 @Stateless
 public class DefaultMedicineDAO implements MedicineDAO {
@@ -27,8 +26,7 @@ public class DefaultMedicineDAO implements MedicineDAO {
             return (Medicine) entityManager.createNamedQuery("Medicine.findByName")
                     .setParameter("name", name)
                     .getSingleResult();
-        }
-        catch (NoResultException e) {
+        } catch (NoResultException e) {
             return null;
         }
     }

@@ -7,7 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-
 /**
  * Used for injecting logged user,
  * Place it with @Inject annotation

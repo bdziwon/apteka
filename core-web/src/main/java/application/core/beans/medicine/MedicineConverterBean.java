@@ -6,7 +6,6 @@ import application.core.model.Medicine;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
@@ -22,10 +21,7 @@ public class MedicineConverterBean implements Converter {
     @Override
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
         try {
-            Medicine medicine
-                    = medicineManager.findMedicine(new Long(s));
-
-            return medicine;
+            return medicineManager.findMedicine(new Long(s));
         } catch (MedicineNotFoundException | NumberFormatException e) {
             return null;
         }
@@ -36,8 +32,7 @@ public class MedicineConverterBean implements Converter {
         if (o == null) {
             return null;
         }
-        String result = String.valueOf(((Medicine) o).getId());
-        return result;
+        return String.valueOf(((Medicine) o).getId());
     }
 
     public MedicineManager getMedicineManager() {

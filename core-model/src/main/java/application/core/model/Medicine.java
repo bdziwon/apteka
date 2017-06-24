@@ -1,7 +1,6 @@
 package application.core.model;
 
 import javax.persistence.*;
-import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -36,7 +35,7 @@ public class Medicine implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull
     @Column(name = "id")
-    private Long    id;
+    private Long id;
 
     @NotNull(message = "Price cannot be empty")
     @Column(name = "price")
@@ -44,11 +43,11 @@ public class Medicine implements Serializable {
 
     @NotNull(message = "Name cannot be empty or longer than 25 characters")
     @Column(name = "name", length = 25)
-    private String  name;
+    private String name;
 
     @NotNull(message = "Description cannot be empty or longer than 500 characters")
     @Column(name = "description", length = 500)
-    private String  description;
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "id_replacements")
@@ -91,14 +90,10 @@ public class Medicine implements Serializable {
 
     @Override
     public String toString() {
-        return id+","+
-                name+",";
+        return id + "," +
+                name + ",";
 
 
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public ReplacementGroup getReplacementGroup() {
@@ -137,24 +132,28 @@ public class Medicine implements Serializable {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public List<MedicineOrder> getOrders() {
         return orders;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public Long getQuantity() {
-        return quantity;
     }
 
     public void setOrders(List<MedicineOrder> orders) {
         this.orders = orders;
     }
 
+    public String getType() {
+        return type;
+    }
+
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Long getQuantity() {
+        return quantity;
     }
 
     public void setQuantity(Long quantity) {
@@ -180,7 +179,7 @@ public class Medicine implements Serializable {
     @Override
     public boolean equals(Object obj) {
         Medicine that = (Medicine) obj;
-        return  that.id.equals(this.getId());
+        return that.id.equals(this.getId());
     }
 }
 

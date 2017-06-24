@@ -1,13 +1,12 @@
 package application.core.ejb.dao;
+
 import application.core.api.dao.MedicineOrderDAO;
 import application.core.model.MedicineOrder;
-
-import java.util.List;
-
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 
 @Stateless
 public class DefaultMedcineOrderDAO implements MedicineOrderDAO {

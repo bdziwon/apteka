@@ -3,13 +3,11 @@ package application.core.ejb.dao;
 import application.core.api.dao.ReplacementGroupDAO;
 import application.core.model.ReplacementGroup;
 
-import java.util.List;
-
-
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 
 @Stateless
 public class DefaultReplecementGruopDAO implements ReplacementGroupDAO {

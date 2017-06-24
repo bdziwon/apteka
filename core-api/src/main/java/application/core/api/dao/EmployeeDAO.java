@@ -10,15 +10,15 @@ import java.util.List;
 @Local
 public interface EmployeeDAO {
 
-	void removeEmployee(Employee employee);
+    void removeEmployee(Employee employee);
 
-	void persistEmployee(Employee employee);
+    void persistEmployee(Employee employee);
 
-	Employee mergeEmployee(Employee employee);
+    Employee mergeEmployee(Employee employee);
 
-	Employee findEmployee(Long id);
+    Employee findEmployee(Long id);
 
-	List<Employee> findAllEmployees();
+    List<Employee> findAllEmployees();
 
     List<Employee> findEmployeesByCredentials(String username, String password);
 

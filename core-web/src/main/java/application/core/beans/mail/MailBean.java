@@ -14,13 +14,17 @@ import java.util.Date;
 public class MailBean implements Serializable {
 
     //inject mailInfo
-    @ManagedProperty(value="#{mailInfoBean}")
+    @ManagedProperty(value = "#{mailInfoBean}")
     MailInfoBean mailInfoBean;
 
     //employeeManager for operations
     @EJB(beanInterface = MailManager.class)
     MailManager mailManager;
 
+
+    public MailBean() {
+
+    }
 
     public MailInfoBean getMailInfoBean() {
         return mailInfoBean;
@@ -34,24 +38,20 @@ public class MailBean implements Serializable {
         return mailManager;
     }
 
+
     public void setMailManager(MailManager mailManager) {
         this.mailManager = mailManager;
-    }
-
-    public MailBean() {
-
     }
 
     public void sendMail() {
         Date data = new Date();
 
 
-        String  text       = mailInfoBean.getText();
+        String text = mailInfoBean.getText();
         mailManager.sendMail(text);
         System.out.println(text);
 
     }
-
 
 
 }

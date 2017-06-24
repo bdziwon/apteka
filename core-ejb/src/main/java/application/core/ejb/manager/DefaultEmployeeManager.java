@@ -13,40 +13,40 @@ import java.util.List;
 @Stateless
 public class DefaultEmployeeManager implements EmployeeManager {
 
-	@EJB
-	private EmployeeDAO employeeDAO;
+    @EJB
+    private EmployeeDAO employeeDAO;
 
-	public void removeEmployee(Employee employee) {
-		employeeDAO.removeEmployee(employee);
-	}
+    public void removeEmployee(Employee employee) {
+        employeeDAO.removeEmployee(employee);
+    }
 
-	@Override
-	public List<Employee> findEmployeesByCredentials(String username, String password) {
-		return employeeDAO.findEmployeesByCredentials(username, password);
-	}
+    @Override
+    public List<Employee> findEmployeesByCredentials(String username, String password) {
+        return employeeDAO.findEmployeesByCredentials(username, password);
+    }
 
-	@Override
-	public List<Employee> findEmployeesByUsername(String username) {
-		return employeeDAO.findAllEmployeesByUsername(username);
-	}
+    @Override
+    public List<Employee> findEmployeesByUsername(String username) {
+        return employeeDAO.findAllEmployeesByUsername(username);
+    }
 
-	public void persistEmployee(Employee employee) {
-		employeeDAO.persistEmployee(employee);
-	}
+    public void persistEmployee(Employee employee) {
+        employeeDAO.persistEmployee(employee);
+    }
 
-	public Employee mergeEmployee(Employee employee) {
-		return employeeDAO.mergeEmployee(employee);
-	}
+    public Employee mergeEmployee(Employee employee) {
+        return employeeDAO.mergeEmployee(employee);
+    }
 
-	public Employee findEmployee(Long id) throws EmployeeNotFoundException {
-		Employee employee = employeeDAO.findEmployee(id);
-		if (employee == null)
-			throw new EmployeeNotFoundException();
-		return employee;
-	}
+    public Employee findEmployee(Long id) throws EmployeeNotFoundException {
+        Employee employee = employeeDAO.findEmployee(id);
+        if (employee == null)
+            throw new EmployeeNotFoundException();
+        return employee;
+    }
 
-	public List<Employee> findAllEmployees() {
-		return employeeDAO.findAllEmployees();
-	}
+    public List<Employee> findAllEmployees() {
+        return employeeDAO.findAllEmployees();
+    }
 
 }

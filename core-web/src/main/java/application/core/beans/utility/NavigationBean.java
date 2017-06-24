@@ -1,7 +1,5 @@
 package application.core.beans.utility;
 
-import javax.decorator.Decorator;
-import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.ExternalContext;
@@ -19,6 +17,7 @@ public class NavigationBean implements Serializable {
 
     /**
      * redirects to path from current position
+     *
      * @param path
      */
 
@@ -34,6 +33,7 @@ public class NavigationBean implements Serializable {
 
     /**
      * redirect to path from root position
+     *
      * @param path
      */
     public void redirectFromTop(String path) {

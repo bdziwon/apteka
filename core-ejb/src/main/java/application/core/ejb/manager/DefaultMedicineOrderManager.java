@@ -6,15 +6,16 @@ import application.core.api.exception.MedicineOrderNotFoundException;
 import application.core.api.manager.MedicineOrderManager;
 import application.core.model.MedicineOrder;
 
-import java.util.List;
-
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.List;
+
 @Stateless
 
 public class DefaultMedicineOrderManager implements MedicineOrderManager {
     @EJB
     private MedicineOrderDAO medicineOrderDAO;
+
     @Override
     public void removeMedicineOrder(MedicineOrder medicineOrder) {
         medicineOrderDAO.removeMedicineOrder(medicineOrder);

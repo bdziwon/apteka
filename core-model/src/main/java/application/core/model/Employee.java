@@ -1,6 +1,5 @@
 package application.core.model;
 
-import javax.inject.Named;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;

@@ -3,9 +3,8 @@ package application.core.api.dao;
 
 import application.core.model.Medicine;
 
-import java.util.List;
-
 import javax.ejb.Local;
+import java.util.List;
 
 
 @Local
@@ -14,7 +13,6 @@ public interface MedicineDAO {
     void removeMedicine(Medicine medicine);
 
     void persistMedicine(Medicine medicine);
-
 
     Medicine mergeMedicine(Medicine medicine);
 

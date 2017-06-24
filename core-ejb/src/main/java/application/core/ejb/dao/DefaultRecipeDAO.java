@@ -1,15 +1,13 @@
 package application.core.ejb.dao;
+
 import application.core.api.dao.RecipeDAO;
 import application.core.model.Employee;
 import application.core.model.Recipe;
 
-
-import java.util.List;
-
-
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 
 @Stateless
 public class DefaultRecipeDAO implements RecipeDAO {

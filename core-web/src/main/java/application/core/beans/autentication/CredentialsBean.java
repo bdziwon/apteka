@@ -5,7 +5,6 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.inject.Named;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
@@ -26,7 +25,7 @@ public class CredentialsBean implements Serializable {
     @Length(min = 6, max = 24, message = "Password should be longer than 5 chars and shorter than 25 chars")
     private String password;
 
-    public CredentialsBean(){
+    public CredentialsBean() {
 
     }
 

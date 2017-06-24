@@ -3,19 +3,19 @@ package application.core.ejb.manager;
 import application.core.api.manager.MailManager;
 
 import javax.ejb.Stateless;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.security.auth.Subject;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Properties;
 
 @Stateless
 public class DefaultMailManager implements MailManager {
 
-        final String username = "paiprojekt2017@gmail.com";
-        final String password = "hubert123";
+    final String username = "paiprojekt2017@gmail.com";
+    final String password = "hubert123";
+
     @Override
     public void sendMail(String text) {
         Properties props = new Properties();
@@ -44,7 +44,6 @@ public class DefaultMailManager implements MailManager {
             message.setText(text);
 
             Transport.send(message);
-
 
 
         } catch (MessagingException e) {

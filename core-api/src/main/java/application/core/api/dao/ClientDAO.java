@@ -3,9 +3,8 @@ package application.core.api.dao;
 
 import application.core.model.Client;
 
-import java.util.List;
-
 import javax.ejb.Local;
+import java.util.List;
 
 
 @Local

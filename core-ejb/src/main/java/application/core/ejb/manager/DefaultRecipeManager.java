@@ -1,22 +1,22 @@
 package application.core.ejb.manager;
 
 
+import application.core.api.dao.RecipeDAO;
+import application.core.api.exception.RecipeNotFoundException;
+import application.core.api.manager.RecipeManager;
+import application.core.model.Employee;
+import application.core.model.Recipe;
 
-        import application.core.api.dao.RecipeDAO;
-        import application.core.api.exception.RecipeNotFoundException;
-        import application.core.api.manager.RecipeManager;
-        import application.core.model.Employee;
-        import application.core.model.Recipe;
+import javax.ejb.EJB;
+import javax.ejb.Stateless;
+import java.util.List;
 
-        import java.util.List;
-
-        import javax.ejb.EJB;
-        import javax.ejb.Stateless;
 @Stateless
 
 public class DefaultRecipeManager implements RecipeManager {
     @EJB
     private RecipeDAO recipeDao;
+
     @Override
     public void removeRecipe(Recipe recipe) {
         recipeDao.removeRecipe(recipe);
