@@ -78,6 +78,9 @@
 
                 <p:commandButton value="Add" id="add" icon="ui-icon-circle-plus" update="table"
                                  actionListener="#{recipeBean.addMedicineOrder}" styleClass="ui-priority-primary"/>
+                <p:commandButton value="Back" id="index" icon="ui-icon-arrow-1-w" update="table"
+                                 actionListener="#{navigationBean.redirectTo('index.xhtml')}"
+                                 styleClass="ui-priority-primary" process="@this"/>
 
             </h:form>
 
