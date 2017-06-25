@@ -17,6 +17,14 @@
         <element id="archive" name="core-model-1.0-SNAPSHOT.jar">
           <element id="module-output" name="core-model" />
         </element>
+        <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+        <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+        <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        <element id="library" level="project" name="Maven: org.reflections:reflections:0.9.10" />
+        <element id="library" level="project" name="Maven: com.google.guava:guava:15.0" />
+        <element id="library" level="project" name="Maven: org.javassist:javassist:3.19.0-GA" />
+        <element id="library" level="project" name="Maven: com.google.code.findbugs:annotations:2.0.1" />
+        <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.6" />
       </element>
       <element id="archive" name="core-web-1.0-SNAPSHOT.war">
         <element id="artifact" artifact-name="core-web:war exploded" />

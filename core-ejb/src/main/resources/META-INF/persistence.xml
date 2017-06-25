@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="TestPU">
+        <class>application.core.model.ReplacementGroup</class>
+        <class>application.core.model.Medicine</class>
+        <class>application.core.model.Employee</class>
+        <class>application.core.model.MedicineOrder</class>
+        <class>application.core.model.Client</class>
+        <class>application.core.model.Recipe</class>
+        <properties>
+            <!-- Properties for Hibernate -->
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"></property>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/aptekaTest?serverTimezone=CET"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+            <property name="hibernate.enable_lazy_load_no_trans" value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
+

@@ -12,7 +12,7 @@ import java.util.List;
 @Stateless
 public class DefaultRecipeDAO implements RecipeDAO {
     @PersistenceContext
-    private EntityManager entityManager;
+    public EntityManager entityManager;
 
     @Override
     public Recipe findRecipe(Long id) {

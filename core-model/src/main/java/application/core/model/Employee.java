@@ -56,8 +56,18 @@ public class Employee implements Serializable {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "employee")
+    @OneToMany( mappedBy = "employee")
     private List<Recipe> addedRecipes;
+
+    public Employee(String firstName, String lastName, String username, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.password = password;
+    }
+
+    public Employee() {
+    }
 
     public Long getId() {
         return id;

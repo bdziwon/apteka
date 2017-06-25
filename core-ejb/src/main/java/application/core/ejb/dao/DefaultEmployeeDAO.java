@@ -17,7 +17,7 @@ import java.util.List;
 public class DefaultEmployeeDAO implements EmployeeDAO {
 
     @PersistenceContext
-    private EntityManager entityManager;
+    public EntityManager entityManager;
 
     public Employee findEmployee(Long id) {
         return entityManager.find(Employee.class, id);

@@ -5,6 +5,10 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
+
+@Entity
+@Table(name = "client")
+
 @NamedQueries({
         @NamedQuery(
                 name = "Client.findAllOrdered",
@@ -15,8 +19,6 @@ import java.util.List;
 
 
 })
-@Entity
-@Table(name = "client")
 
 public class Client implements Serializable {
 
@@ -105,5 +107,15 @@ public class Client implements Serializable {
 
     public void setRecipes(List<Recipe> recipes) {
         this.recipes = recipes;
+    }
+
+    public Client(String firstName, String lastName, String phoneNumber, Long pesel) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.pesel = pesel;
+    }
+
+    public Client() {
     }
 }

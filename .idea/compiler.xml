@@ -19,7 +19,9 @@
       <module name="core-ear" target="1.6" />
       <module name="core-ejb" target="1.6" />
       <module name="core-model" target="1.7" />
+      <module name="core-test" target="1.7" />
       <module name="core-web" target="1.7" />
+      <module name="test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -13,7 +13,7 @@ import java.util.List;
 public class DefaultMedicineDAO implements MedicineDAO {
 
     @PersistenceContext
-    private EntityManager entityManager;
+    public EntityManager entityManager;
 
     @Override
     public Medicine findMedicine(Long id) {
@@ -52,4 +52,11 @@ public class DefaultMedicineDAO implements MedicineDAO {
         entityManager.remove(entityManager.merge(medicine));
     }
 
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
 }

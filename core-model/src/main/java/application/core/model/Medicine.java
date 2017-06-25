@@ -82,6 +82,16 @@ public class Medicine implements Serializable {
         super();
     }
 
+    public Medicine(BigDecimal price, String name, String description, String type, Long quantity, Long minQuantity, Long maxQuantity) {
+        this.price = price;
+        this.name = name;
+        this.description = description;
+        this.type = type;
+        this.quantity = quantity;
+        this.minQuantity = minQuantity;
+        this.maxQuantity = maxQuantity;
+    }
+
     public Medicine(BigDecimal price, String name, String description) {
         this.price = price;
         this.name = name;

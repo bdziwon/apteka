@@ -5,6 +5,15 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "MedicineOrder.findAllOrdered",
+                query = "SELECT medicineOrder " +
+                        "FROM MedicineOrder medicineOrder " +
+                        "ORDER BY medicineOrder.id ASC"
+        )
+})
+
 @Entity
 @Table(name = "medicine_order")
 public class MedicineOrder implements Serializable {
@@ -30,6 +39,17 @@ public class MedicineOrder implements Serializable {
     private Recipe recipe;
 
     public MedicineOrder() {
+    }
+
+    public MedicineOrder(Long quantity, Medicine medicine, Recipe recipe) {
+        this.quantity = quantity;
+        this.medicine = medicine;
+        this.recipe = recipe;
+    }
+
+    public MedicineOrder(Long quantity, Medicine medicine) {
+        this.quantity = quantity;
+        this.medicine = medicine;
     }
 
     public Long getId() {

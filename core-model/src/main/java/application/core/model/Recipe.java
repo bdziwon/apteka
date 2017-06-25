@@ -29,7 +29,7 @@ public class Recipe implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "recipe", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany( mappedBy = "recipe", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MedicineOrder> medicines;
 
     @NotNull
@@ -43,6 +43,11 @@ public class Recipe implements Serializable {
     private Employee employee;
 
     public Recipe() {
+    }
+
+    public Recipe(Client client, Employee employee) {
+        this.client = client;
+        this.employee = employee;
     }
 
     public Long getId() {

@@ -37,6 +37,13 @@ public class ReplacementGroup implements Serializable {
     @OneToMany(mappedBy = "replacementGroup", cascade = CascadeType.ALL)
     private List<Medicine> medicines;
 
+    public ReplacementGroup() {
+    }
+
+    public ReplacementGroup(String name) {
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

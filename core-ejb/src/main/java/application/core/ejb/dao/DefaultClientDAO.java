@@ -11,7 +11,7 @@ import java.util.List;
 @Stateless
 public class DefaultClientDAO implements ClientDAO {
     @PersistenceContext
-    private EntityManager entityManager;
+    public EntityManager entityManager;
 
     @Override
     public Client findClient(Long id) {
@@ -39,5 +39,12 @@ public class DefaultClientDAO implements ClientDAO {
         entityManager.remove(entityManager.merge(client));
     }
 
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
 }
 
