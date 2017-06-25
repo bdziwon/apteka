@@ -16,8 +16,8 @@
         <h3>PHARMACY: RECIPES </h3>
 
         <h:panelGrid columns="2" cellpadding="5">
-        <p:commandButton value="Add/Edit recipe" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
-        <p:commandButton value="Back"  id="index" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
+        <p:commandButton value="Add/Edit recipe" icon="ui-icon-newwin" actionListener="#{navigationBean.redirectTo('add.xhtml')}" styleClass="ui-priority-primary" />
+        <p:commandButton value="Back"  id="index" icon="ui-icon-arrow-1-w" actionListener="#{navigationBean.redirectFromTop('')}" styleClass="ui-priority-primary" process="@this"/>
         </h:panelGrid>
 
         <h:form id="RecipesForm">

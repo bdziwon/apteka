@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e820481d-44fc-4579-bbab-869eb0abd0d1" name="Default" comment="Validatory ujemnych liczb&#10;wyświetlanie leków i ich ilości do zamówienia w tabeli" />
+    <list default="true" id="e820481d-44fc-4579-bbab-869eb0abd0d1" name="Default" comment="u mnie dziala">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT.ear" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT.ear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-ejb-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-ejb-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-web-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-api-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-model-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-model-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-api-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-model-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-model-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-ejb/target/core-ejb-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/core-ejb/target/core-ejb-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml" afterPath="$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml" afterPath="$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+    </list>
     <ignored path="$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/" />
     <ignored path="$PROJECT_DIR$/core-ear/target/maven-archiver/" />
     <ignored path="$PROJECT_DIR$/core-web/target/classes/" />
@@ -19,12 +33,12 @@
     <ignored path="$PROJECT_DIR$/core-model/target/maven-archiver/" />
     <ignored path="$PROJECT_DIR$/core-model/target/maven-status/" />
     <manually-removed-from-ignored>
-      <directory path="$PROJECT_DIR$/core-ear/target/" />
-      <directory path="$PROJECT_DIR$/core-api/target/" />
       <directory path="$PROJECT_DIR$/core-ejb/target/" />
-      <directory path="$PROJECT_DIR$/core-web/target/" />
+      <directory path="$PROJECT_DIR$/core-api/target/" />
       <directory path="$PROJECT_DIR$/target/" />
+      <directory path="$PROJECT_DIR$/core-web/target/" />
       <directory path="$PROJECT_DIR$/core-model/target/" />
+      <directory path="$PROJECT_DIR$/core-ear/target/" />
     </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,34 +71,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MailManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultMailManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+            <state relative-caret-position="969">
+              <caret line="57" column="29" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailSend.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml">
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1394">
+              <caret line="82" column="83" lean-forward="true" selection-start-line="82" selection-start-column="83" selection-end-line="82" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -165,8 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml" />
-        <option value="$PROJECT_DIR$/core-model/src/main/java/application/core/model/Recipe.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/test.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/medicines/add.xhtml" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml" />
@@ -216,6 +236,8 @@
         <option value="$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java" />
         <option value="$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml" />
         <option value="$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java" />
+        <option value="$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml" />
+        <option value="$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml" />
       </list>
     </option>
   </component>
@@ -263,7 +285,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -474,8 +496,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -572,45 +594,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
+              <option name="myItemId" value="replacements" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,19 +624,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mail" />
+              <option name="myItemId" value="recipes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -662,7 +642,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-ejb" />
+              <option name="myItemId" value="core-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,7 +672,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-ejb" />
+              <option name="myItemId" value="core-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apteka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core-model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -698,7 +738,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core-ejb" />
+              <option name="myItemId" value="core-model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -714,125 +754,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ejb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-ejb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apteka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core-api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -871,6 +799,218 @@
       <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines\images" />
       <recent name="E:\apteka_git\apteka\core-web\src\main\webapp\medicines" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.local.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ClientDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/EmployeeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/MedicineOrderDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/RecipeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/dao/ReplacementGroupDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ClientNotFoundException.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/EmployeeNotFoundException.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineNotFoundException.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/MedicineOrderNotFoundException.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/RecipeNotFoundException.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/exception/ReplacementGroupNotFoundException.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ClientManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/EmployeeManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MedicineOrderManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/RecipeManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/ReplacementGroupManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/target/core-api-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-api/target/maven-archiver/pom.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT.ear</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/META-INF/MANIFEST.MF</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-ejb-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/core-web-1.0-SNAPSHOT.war</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-api-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/core-ear-1.0-SNAPSHOT/lib/core-model-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ear/target/maven-archiver/pom.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultClientDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultEmployeeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedcineOrderDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultMedicineDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultRecipeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/dao/DefaultReplecementGruopDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultClientManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultEmployeeManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMailManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultMedicineOrderManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultRecipeManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/src/main/java/application/core/ejb/manager/DefaultReplacementGroupManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/target/core-ejb-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/target/core-ejb-1.0-SNAPSHOT/META-INF/MANIFEST.MF</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-ejb/target/maven-archiver/pom.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/src/main/java/application/core/model/Client.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/src/main/java/application/core/model/Employee.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/src/main/java/application/core/model/Medicine.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/src/main/java/application/core/model/MedicineOrder.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/src/main/java/application/core/model/Recipe.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/classes/application/core/model/Client.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/classes/application/core/model/Employee.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/classes/application/core/model/Medicine.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/classes/application/core/model/MedicineOrder.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/classes/application/core/model/Recipe.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/core-model-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-model/target/maven-archiver/pom.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/core-web.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/annotations/LoggedIn.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/EmployeeBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/CredentialsBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/autentication/RegisterInformationBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientInformationBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/mail/MailInfoBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/recipe/RecipeInformationBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementConverterBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/NavigationBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/SessionBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/client/add.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/client/index.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/medicines/add.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/replacements/add.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/classes/application/core/beans/EmployeeBean.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT.war</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/META-INF/MANIFEST.MF</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/classes/application/core/beans/EmployeeBean.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-api-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/WEB-INF/lib/core-model-1.0-SNAPSHOT.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/core-web-1.0-SNAPSHOT/index.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/target/maven-archiver/pom.properties</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/webContexts.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/client/ClientConverterBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrder.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/magazineOrder/MagazineOrderBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineConverterBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/MessageBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/java/application/core/beans/utility/TestBean.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/magazine/images/pdf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/magazine/order.xhtml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/test.xhtml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/core-web/src/main/webapp/ClientList.xhtml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1563,7 +1703,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173053000" />
+    <option name="totallyTimeSpent" value="174865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1575,30 +1715,68 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.50385606" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12737921" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17147192" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.8931186" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649574" sideWeight="0.49614397" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31452993" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" x="22" y="154" width="1556" height="312" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25899744" sideWeight="0.5069307" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2754173" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.056782335" sideWeight="0.1068814" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12664714" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17057101" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.49485862" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.8931186" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.4974293" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="686" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.47803807" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.8931186" order="2" side_tool="false" content_ui="tabs" x="22" y="154" width="1556" height="312" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1606,18 +1784,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28257686" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12982005" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.4974293" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="686" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.4974293" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1719,34 +1890,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0.jar!/javax/validation/constraints/Min.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/6.0/javaee-api-6.0.jar!/javax/persistence/ManyToOne.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="68" column="36" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/medicine/MedicineInformationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-web/src/main/java/application/core/beans/replacement/ReplacementGroupBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1856,7 +1999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-109">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1885,7 +2027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1921,7 +2062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2020,7 +2160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2028,12 +2167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#666#667#0" expanded="false" />
-            <element signature="e#693#694#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2065,21 +2198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-api/src/main/java/application/core/api/manager/MailManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2087,6 +2209,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="63" column="45" lean-forward="false" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/MailSend.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/recipes/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/add.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1209">
+          <caret line="73" column="19" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/medicines/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-web/src/main/webapp/recipes/add.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="82" column="83" lean-forward="true" selection-start-line="82" selection-start-column="83" selection-end-line="82" selection-end-column="83" />
           <folding />
         </state>
       </provider>
