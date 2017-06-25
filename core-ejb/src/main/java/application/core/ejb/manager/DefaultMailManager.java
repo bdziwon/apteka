@@ -2,6 +2,9 @@ package application.core.ejb.manager;
 
 import application.core.api.manager.MailManager;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.ejb.Stateless;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -45,27 +48,32 @@ public class DefaultMailManager implements MailManager {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("paiprojekt2017@gmail.com"));
             message.setSubject("zamowienie z dnia" + "" + simpleDateHere.format(new Date()));
-            message.setSentDate(new Date());
-            MimeBodyPart messageBodyPart = new MimeBodyPart();
-            messageBodyPart.setContent(message, "text/html");
+            BodyPart messageBodyPart = new MimeBodyPart();
 
-            // creates multi-part
+            // Now set the actual message
+            messageBodyPart.setText(text);
+
+            // Create a multipar message
             Multipart multipart = new MimeMultipart();
+
+            // Set text message part
             multipart.addBodyPart(messageBodyPart);
-            MimeBodyPart textpart = new MimeBodyPart();
-            textpart.setText(text);
-            multipart.addBodyPart(textpart);
-            MimeBodyPart attachPart = new MimeBodyPart();
-            try {
 
-                attachPart.attachFile(file);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+            // Part two is attachment
+            messageBodyPart = new MimeBodyPart();
+            String filename =  file.getPath();
+            DataSource source = new FileDataSource(filename);
+            messageBodyPart.setDataHandler(new DataHandler(source));
+            messageBodyPart.setFileName(filename);
+            multipart.addBodyPart(messageBodyPart);
 
-            multipart.addBodyPart(attachPart);
+            // Send the complete message parts
             message.setContent(multipart);
 
+            // Send message
+            Transport.send(message);
+
+            System.out.println("Sent message successfully....");
 
 
 

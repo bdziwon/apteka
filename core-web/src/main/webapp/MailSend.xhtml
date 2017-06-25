@@ -25,7 +25,10 @@
                         <p:outputLabel for = "text">Text:</p:outputLabel>
                         <p:inputTextarea id = "text" value = "#{mailInfoBean.text}" />
                     </p:row>
-                    <h:inputFile id ="file" value="#{mailInfoBean.file}"/>
+                    <p:row>
+                        <input type="file" name="pdf" id="pdf" value="#{mailInfoBean.file}"/>
+                    </p:row>
+
                 </f:validateBean>
 
             </p:panelGrid>
