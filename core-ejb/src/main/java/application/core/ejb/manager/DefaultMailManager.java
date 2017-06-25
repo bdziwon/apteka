@@ -5,7 +5,11 @@ import application.core.api.manager.MailManager;
 import javax.ejb.Stateless;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -17,7 +21,7 @@ public class DefaultMailManager implements MailManager {
     final String password = "hubert123";
 
     @Override
-    public void sendMail(String text) {
+    public void sendMail(String text,File file) {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
@@ -41,7 +45,29 @@ public class DefaultMailManager implements MailManager {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("paiprojekt2017@gmail.com"));
             message.setSubject("zamowienie z dnia" + "" + simpleDateHere.format(new Date()));
-            message.setText(text);
+            message.setSentDate(new Date());
+            MimeBodyPart messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setContent(message, "text/html");
+
+            // creates multi-part
+            Multipart multipart = new MimeMultipart();
+            multipart.addBodyPart(messageBodyPart);
+            MimeBodyPart textpart = new MimeBodyPart();
+            textpart.setText(text);
+            multipart.addBodyPart(textpart);
+            MimeBodyPart attachPart = new MimeBodyPart();
+            try {
+
+                attachPart.attachFile(file);
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
+            multipart.addBodyPart(attachPart);
+            message.setContent(multipart);
+
+
+
 
             Transport.send(message);
 

@@ -6,6 +6,7 @@ import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
+import java.io.File;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -44,11 +45,9 @@ public class MailBean implements Serializable {
     }
 
     public void sendMail() {
-        Date data = new Date();
-
-
         String text = mailInfoBean.getText();
-        mailManager.sendMail(text);
+        File file = mailInfoBean.getFile();
+        mailManager.sendMail(text,file);
         System.out.println(text);
 
     }
