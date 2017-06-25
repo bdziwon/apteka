@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/apteka.iml" filepath="$PROJECT_DIR$/apteka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/apteka.iml" filepath="$PROJECT_DIR$/.idea/apteka.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-api/core-api.iml" filepath="$PROJECT_DIR$/core-api/core-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-ear/core-ear.iml" filepath="$PROJECT_DIR$/core-ear/core-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-ejb/core-ejb.iml" filepath="$PROJECT_DIR$/core-ejb/core-ejb.iml" />

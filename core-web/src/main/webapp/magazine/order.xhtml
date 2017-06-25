@@ -20,6 +20,7 @@
                              process="@this"/>
         </h:panelGrid>
 
+
         <h:form id="magazineOrderForm">
             <p:dataTable widgetVar="magazineOrderTable" id="magazineOrderList" var="magazineOrder"
                          value="#{magazineOrderBean.magazineOrders}">
@@ -39,11 +40,9 @@
                 </p:column>
 
             </p:dataTable>
-            <h4>Export Magazine Orders</h4>
-            <h:commandLink>
-                <p:graphicImage url="images/pdf.png" height="50px" width="50px"/>
-                <p:dataExporter type="pdf" target="magazineOrderList" fileName="Orders" pageOnly="true"/>
-            </h:commandLink>
+            <p:growl id="growl" life="2000"/>
+            <p:commandButton value="Send" id="send" update="growl" icon="ui-icon-circle-plus" actionListener="#{magazineOrderBean.sendMail()}" styleClass="ui-priority-primary" />
+
         </h:form>
     </h:body>
 </f:view>
